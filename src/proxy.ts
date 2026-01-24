@@ -6,7 +6,9 @@ const isAdminRoute = createRouteMatcher(["/admin(.*)", "/studio(.*)"]);
 
 export default clerkMiddleware(async (auth, req) => {
     if (isAdminRoute(req)) {
+        console.log("Proxy: Checking admin route for:", req.url);
         const { sessionClaims } = await auth();
+        console.log("Proxy: Session Claims:", sessionClaims);
 
         // sessionClaims.metadata.role is now type-safe thanks to globals.d.ts
         if (sessionClaims?.metadata?.role !== "admin") {
