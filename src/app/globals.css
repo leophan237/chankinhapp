@@ -27,6 +27,9 @@
   --color-destructive: var(--destructive);
   --color-accent-foreground: var(--accent-foreground);
   --color-accent: var(--accent);
+  --color-admin-bg: var(--admin-bg);
+  --color-glass-bg: var(--glass-bg);
+  --color-admin-accent: var(--admin-accent);
   --color-muted-foreground: var(--muted-foreground);
   --color-muted: var(--muted);
   --color-secondary-foreground: var(--secondary-foreground);
@@ -49,7 +52,11 @@
   /* Light mode - minimal cream/off-white base */
   --background: oklch(0.98 0.003 85);
   --foreground: oklch(0.2 0.01 85);
+  --admin-bg: #f5f5f7;
+  --glass-bg: rgba(255, 255, 255, 0.65);
+  --admin-accent: #c5a059;
   --card: oklch(1 0 0);
+  /* ... rest of light variables ... */
   --card-foreground: oklch(0.2 0.01 85);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.2 0.01 85);
@@ -82,9 +89,11 @@
 }
 
 .dark {
-  /* Dark mode - Zen aesthetic with deep charcoal and stone white silver */
   --background: oklch(0.18 0.005 85);
   --foreground: oklch(0.9 0.005 85);
+  --admin-bg: #1e1e1e;
+  --glass-bg: rgba(30, 30, 30, 0.65);
+  --admin-accent: #c5a059;
   --card: oklch(0.22 0.005 85);
   --card-foreground: oklch(0.9 0.005 85);
   --popover: oklch(0.22 0.005 85);
@@ -121,12 +130,18 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
 
   /* Improved Typography Hierarchy */
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-sans;
     line-height: 1.2;
     letter-spacing: 0.01em;
@@ -163,7 +178,13 @@
   }
 
   /* Improved Body Text Readability */
-  p, span, div, button, input, textarea, select {
+  p,
+  span,
+  div,
+  button,
+  input,
+  textarea,
+  select {
     @apply font-sans;
   }
 
@@ -173,12 +194,15 @@
   }
 
   /* Better readability for long-form content */
-  article, section {
+  article,
+  section {
     line-height: 1.7;
   }
 
   /* Improved readability for Vietnamese text */
-  p, span, div {
+  p,
+  span,
+  div {
     word-spacing: 0.02em;
   }
 }
@@ -263,6 +287,7 @@
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -273,6 +298,7 @@
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -283,6 +309,7 @@
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -301,16 +328,33 @@
 }
 
 /* Stagger children animations */
-.stagger-children > * {
+.stagger-children>* {
   animation: slideUp 0.8s ease-out backwards;
 }
 
-.stagger-children > *:nth-child(1) { animation-delay: 0.1s; }
-.stagger-children > *:nth-child(2) { animation-delay: 0.2s; }
-.stagger-children > *:nth-child(3) { animation-delay: 0.3s; }
-.stagger-children > *:nth-child(4) { animation-delay: 0.4s; }
-.stagger-children > *:nth-child(5) { animation-delay: 0.5s; }
-.stagger-children > *:nth-child(6) { animation-delay: 0.6s; }
+.stagger-children>*:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.stagger-children>*:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.stagger-children>*:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.stagger-children>*:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.stagger-children>*:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.stagger-children>*:nth-child(6) {
+  animation-delay: 0.6s;
+}
 
 /* Mystic Button (Uiverse Neumorphic Style) */
 .mystic-button {

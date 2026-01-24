@@ -1,4 +1,4 @@
-import { defineField, defineType } from 'next-sanity'
+import { defineField, defineType } from 'sanity'
 
 export const lesson = defineType({
   name: 'lesson',

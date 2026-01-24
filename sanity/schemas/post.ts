@@ -1,4 +1,4 @@
-import { defineField, defineType } from 'next-sanity'
+import { defineField, defineType } from 'sanity'
 
 export const post = defineType({
   name: 'post',
@@ -31,6 +31,7 @@ export const post = defineType({
           { title: 'Nước (Water) - Xúc cảm, tinh thần', value: 'water' },
           { title: 'Lửa (Fire) - Hành động, kiến trúc', value: 'fire' },
           { title: 'Khí (Air) - Tâm trí, triết lý', value: 'air' },
+          { title: 'Không (Void) - Hư vô, tiềm năng', value: 'void' },
         ],
       },
       validation: (Rule) => Rule.required(),
@@ -54,16 +55,7 @@ export const post = defineType({
     defineField({
       name: 'content',
       title: 'Content - Nội dung chi tiết (Portable Text)',
-      type: 'array',
-      of: [
-        defineType({
-          type: 'block',
-          name: 'blockContent',
-          of: [
-            defineType({ type: 'block', name: 'block' }),
-          ],
-        }),
-      ],
+      type: 'blockContent',
     }),
     defineField({
       name: 'excerpt',
@@ -110,11 +102,12 @@ export const post = defineType({
       media: 'mainImage',
       element: 'element',
       description: 'description',
+      isFeatured: 'isFeatured',
     },
     prepare(selection) {
       return {
         title: selection.title,
-        media: selection.mainImage,
+        media: selection.media,
         subtitle: `${selection.element} - Featured ${selection.isFeatured ? '⭐' : ''}`,
         description: selection.description,
       }

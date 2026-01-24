@@ -1,207 +1,67 @@
-import { defineField, defineType, defineArrayMember } from 'next-sanity'
+import { defineArrayMember, defineType } from 'sanity'
 
-// Block Content for Portable Text - supports images and quotes
+/**
+ * This is the schema definition for the rich text fields used for
+ * for this blog studio. When you import it in schemas.js it can be
+ * reused in other parts of the studio with:
+ *  {
+ *    name: 'someName',
+ *    title: 'Some title',
+ *    type: 'blockContent'
+ *  }
+ */
 export const blockContent = defineType({
-  name: 'blockContent',
   title: 'Block Content',
-  type: 'object',
-  fields: [
-    // Quote Block
-    defineField({
-      name: 'quote',
-      title: 'Quote',
-      type: 'text',
-      rows: 3,
-    }),
-    defineField({
-      name: 'quoteType',
-      title: 'Quote Type',
-      type: 'string',
-      options: {
-        list: [
-          { title: 'Simple', value: 'simple' },
-          { title: 'Highlighted', value: 'highlighted' },
-          { title: 'Pull Quote', value: 'pull' },
-          { title: 'Emphasized', value: 'emphasized' },
+  name: 'blockContent',
+  type: 'array',
+  of: [
+    defineArrayMember({
+      title: 'Block',
+      type: 'block',
+      // Styles let you set what your user can mark up blocks with. These
+      // correspond with HTML tags, but you can set any title or value
+      // you want and decide how you want to deal with it where you want to
+      // use your content.
+      styles: [
+        { title: 'Normal', value: 'normal' },
+        { title: 'H1', value: 'h1' },
+        { title: 'H2', value: 'h2' },
+        { title: 'H3', value: 'h3' },
+        { title: 'H4', value: 'h4' },
+        { title: 'Quote', value: 'blockquote' },
+      ],
+      lists: [{ title: 'Bullet', value: 'bullet' }, { title: 'Numbered', value: 'number' }],
+      // Marks let you mark up inline text in the block editor.
+      marks: {
+        // Decorators usually describe a single property – e.g. a typographic
+        // preference or highlighting by editors.
+        decorators: [
+          { title: 'Strong', value: 'strong' },
+          { title: 'Emphasis', value: 'em' },
+        ],
+        // Annotations can be any object structure – e.g. a link or a footnote.
+        annotations: [
+          {
+            title: 'URL',
+            name: 'link',
+            type: 'object',
+            fields: [
+              {
+                title: 'URL',
+                name: 'href',
+                type: 'url',
+              },
+            ],
+          },
         ],
       },
     }),
-    // Image Block
-    defineField({
-      name: 'image',
-      title: 'Image',
+    // You can add additional types here. Note that you can't use
+    // primitive types such as 'string' and 'number' in the same array
+    // as a block type.
+    defineArrayMember({
       type: 'image',
-      options: {
-        hotspot: true,
-      },
-    }),
-    defineField({
-      name: 'imageCaption',
-      title: 'Image Caption',
-      type: 'string',
-    }),
-    // Video Block
-    defineField({
-      name: 'video',
-      title: 'Video',
-      type: 'object',
-      fields: [
-        defineField({
-          name: 'videoUrl',
-          title: 'Video URL',
-          type: 'url',
-        }),
-        defineField({
-          name: 'caption',
-          title: 'Caption',
-          type: 'string',
-        }),
-      ],
-    }),
-    // Divider Block
-    defineField({
-      name: 'divider',
-      title: 'Divider',
-      type: 'string',
-      options: {
-        list: [
-          { title: 'Line', value: 'line' },
-          { title: 'Dotted Line', value: 'dotted' },
-          { title: 'Double Line', value: 'double' },
-          { title: 'Space', value: 'space' },
-        ],
-      },
-    }),
-    // Callout Block
-    defineField({
-      name: 'callout',
-      title: 'Callout Box',
-      type: 'object',
-      fields: [
-        defineField({
-          name: 'content',
-          title: 'Content',
-          type: 'text',
-          rows: 3,
-        }),
-        defineField({
-          name: 'calloutType',
-          title: 'Callout Type',
-          type: 'string',
-          options: {
-            list: [
-              { title: 'Info', value: 'info' },
-              { title: 'Warning', value: 'warning' },
-              { title: 'Important', value: 'important' },
-              { title: 'Success', value: 'success' },
-            ],
-          },
-        }),
-      ],
-    }),
-    // Reference Block
-    defineField({
-      name: 'reference',
-      title: 'Cross Reference',
-      type: 'reference',
-      to: [{ type: 'post' }],
-    }),
-    // List Block
-    defineField({
-      name: 'list',
-      title: 'List',
-      type: 'array',
-      of: [
-        defineArrayMember({
-          type: 'object',
-          name: 'listItem',
-          fields: [
-            defineField({
-              name: 'content',
-              title: 'Content',
-              type: 'text',
-            }),
-          ],
-        }),
-      ],
-    }),
-    // Numbered List Block
-    defineField({
-      name: 'numberedList',
-      title: 'Numbered List',
-      type: 'array',
-      of: [
-        defineArrayMember({
-          type: 'object',
-          name: 'numberedListItem',
-          fields: [
-            defineField({
-              name: 'content',
-              title: 'Content',
-              type: "text",
-            }),
-          ],
-        }),
-      ],
-    }),
-    // Code Block
-    defineField({
-      name: 'code',
-      title: 'Code Block',
-      type: 'object',
-      fields: [
-        defineField({
-          name: 'language',
-          title: 'Language',
-          type: 'string',
-          options: {
-            list: [
-              { title: 'JavaScript', value: 'javascript' },
-              { title: 'TypeScript', value: 'typescript' },
-              { title: 'Python', value: 'python' },
-              { title: 'Bash', value: 'bash' },
-              { title: 'Other', value: 'other' },
-            ],
-          },
-        }),
-        defineField({
-          name: 'code',
-          title: 'Code',
-          type: 'text',
-        }),
-      ],
-    }),
-    // Table Block
-    defineField({
-      name: 'table',
-      title: 'Table',
-      type: 'object',
-      fields: [
-        defineField({
-          name: 'headers',
-          title: 'Headers',
-          type: 'array',
-          of: [defineArrayMember({ type: 'string' })],
-        }),
-        defineField({
-          name: 'rows',
-          title: 'Table Rows',
-          type: 'array',
-          of: [
-            defineArrayMember({
-              type: 'array',
-              name: 'tableRow',
-              of: [defineArrayMember({ type: 'string' })],
-            }),
-          ],
-        }),
-      ],
+      options: { hotspot: true },
     }),
   ],
-  preview: {
-    select: {
-      title: 'title',
-      media: 'image',
-    },
-  },
 })

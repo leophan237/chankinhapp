@@ -1,0 +1,15 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/tong-chi/layout,_N_T_/tong-chi/page,_N_T_/tong-chi"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/tong-chi/__PAGE__",
+    "/tong-chi",
+    "/_index",
+    "/_head"
+  ]
+}

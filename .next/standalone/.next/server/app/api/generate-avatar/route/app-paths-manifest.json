@@ -1,0 +1,3 @@
+{
+  "/api/generate-avatar/route": "app/api/generate-avatar/route.js"
+}

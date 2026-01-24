@@ -1,0 +1,208 @@
+export interface Post {
+    _id: string
+    title: string
+    slug: { current: string }
+    excerpt?: string
+    description?: string
+    element: 'earth' | 'water' | 'fire' | 'air' | 'void'
+    publishedAt: string
+    mainImage?: {
+        asset: {
+            url: string
+        }
+    }
+    content?: any[]
+}
+
+export const MOCK_POSTS: Post[] = [
+    // --- EARTH (ĐẤT) ---
+    {
+        _id: 'earth-1',
+        title: 'Cơ Chế Vận Hành SPV Trong Cấu Trúc Holdings',
+        slug: { current: 'co-che-van-hanh-spv' },
+        excerpt: 'Tìm hiểu cách thiết lập các công ty mục đích đặc biệt (SPV) để bảo vệ tài sản cốt lõi và tối ưu hóa dòng tiền trong hệ sinh thái doanh nghiệp.',
+        description: 'Pháp lý là móng, vận hành là gạch. Một cấu trúc SPV chuẩn chỉnh giúp doanh nghiệp đứng vững trước mọi sóng gió thị trường.',
+        element: 'earth',
+        publishedAt: '2025-01-10T08:00:00Z',
+        content: [
+            { _key: '1', _type: 'block', children: [{ _type: 'span', text: 'Trong quản trị doanh nghiệp hiện đại, mô hình Holdings - SPV không còn là khái niệm xa lạ. Tuy nhiên, để vận hành nó hiệu quả như "Đất" - vững chãi và màu mỡ - cần một sự am hiểu sâu sắc về luật pháp và tài chính.' }] },
+            { _key: '2', _type: 'block', children: [{ _type: 'span', text: 'Bước 1: Xác định mục tiêu của SPV. Bước 2: Thiết lập cơ chế kiểm soát từ công ty mẹ. Bước 3: Đảm bảo tính độc lập về pháp lý.' }] }
+        ]
+    },
+    {
+        _id: 'earth-2',
+        title: 'Địa Vững: Tư Duy Xây Dựng Nền Tảng Nhân Sự',
+        slug: { current: 'dia-vung-nhan-su' },
+        excerpt: 'Nhân sự là gốc rễ của tổ chức. Làm thế nào để tuyển dụng và giữ chân những người có cùng hệ giá trị "tỉnh thức"?',
+        description: 'Xây dựng đội ngũ không chỉ là trả lương, mà là nuôi dưỡng một môi trường nơi mỗi cá nhân đều cảm thấy mình là một phần của đại địa.',
+        element: 'earth',
+        publishedAt: '2025-01-12T09:00:00Z',
+        content: [
+            { _key: '1', _type: 'block', children: [{ _type: 'span', text: 'Một doanh nghiệp mạnh bắt đầu từ những cá nhân có nền tảng đạo đức và năng lực vững chắc. Tại Chân Kinh, chúng tôi tin rằng "tâm an thì trí sáng".' }] }
+        ]
+    },
+    {
+        _id: 'earth-3',
+        title: 'Kỷ Luật Sắt: Quy Trình Vận Hành Tiêu Chuẩn (SOP)',
+        slug: { current: 'ky-luat-sat-sop' },
+        excerpt: 'Tự động hóa doanh nghiệp bắt đầu từ việc chuẩn hóa mọi quy trình. SOP chính là bản đồ để con tàu vận hành không cần thuyền trưởng.',
+        description: 'Khi mọi thứ được đưa vào quy trình, doanh nghiệp sẽ vận hành ổn định như chuyển động của địa cầu.',
+        element: 'earth',
+        publishedAt: '2025-01-15T10:00:00Z',
+        content: [
+            { _key: '1', _type: 'block', children: [{ _type: 'span', text: 'Đừng để doanh nghiệp phụ thuộc vào sự xuất sắc của cá nhân. Hãy để nó phụ thuộc vào sự xuất sắc của quy trình.' }] }
+        ]
+    },
+
+    // --- WATER (NƯỚC) ---
+    {
+        _id: 'water-1',
+        title: 'Quản Trị Dòng Tiền: Hơi Thở Của Doanh Nghiệp',
+        slug: { current: 'quan-tri-dong-tien' },
+        excerpt: 'Tiền mặt là máu. Cách luân chuyển dòng vốn để doanh nghiệp luôn tươi trẻ và sẵn sàng cho các cơ hội đột phá.',
+        description: 'Hãy để dòng tiền chảy như nước, không tắc nghẽn, không lãng phí, luôn hướng về đại dương thành công.',
+        element: 'water',
+        publishedAt: '2025-01-18T08:00:00Z',
+        content: [
+            { _key: '1', _type: 'block', children: [{ _type: 'span', text: 'Trong kinh doanh, lợi nhuận là ý kiến, nhưng tiền mặt là thực tế. Bài viết này hướng dẫn bạn cách tối ưu chu kỳ tiền mặt.' }] }
+        ]
+    },
+    {
+        _id: 'water-2',
+        title: 'Thích Nghi: Nghệ Thuật Xoay Trục Trong Khủng Hoảng',
+        slug: { current: 'thich-nghi-xoay-truc' },
+        excerpt: 'Khi thị trường thay đổi, kẻ mạnh nhất không phải kẻ to nhất, mà là kẻ nhanh nhất và linh hoạt nhất.',
+        description: 'Nước tùy vật mà định hình. Doanh nghiệp cần học cách thay đổi hình dạng để vượt qua mọi chướng ngại vật.',
+        element: 'water',
+        publishedAt: '2025-01-20T09:00:00Z',
+        content: [
+            { _key: '1', _type: 'block', children: [{ _type: 'span', text: 'Nhìn vào cách các tập đoàn lớn đã "thay da đổi thịt" để tồn tại qua các cuộc khủng hoảng kinh tế toàn cầu.' }] }
+        ]
+    },
+    {
+        _id: 'water-3',
+        title: 'Văn Hóa Sẻ Chia: Xây Dựng Cộng Đồng Kết Nối',
+        slug: { current: 'van-hoa-se-chia' },
+        excerpt: 'Làm thế nào để tạo ra một dòng chảy tri thức xuyên suốt trong tổ chức, nơi mọi người đều sẵn lòng hỗ trợ lẫn nhau?',
+        description: 'Kết nối là sức mạnh của nước. Những giọt nước li ti khi hợp lại sẽ tạo nên cơn sóng thần mãnh liệt.',
+        element: 'water',
+        publishedAt: '2025-01-22T10:00:00Z',
+        content: [
+            { _key: '1', _type: 'block', children: [{ _type: 'span', text: 'Văn hóa doanh nghiệp không phải là những khẩu hiệu treo trên tường, mà là cách chúng ta tương tác với nhau hàng ngày.' }] }
+        ]
+    },
+
+    // --- FIRE (LỬA) ---
+    {
+        _id: 'fire-1',
+        title: 'Branding Aggressive: Chiếm Lĩnh Tâm Trí Khách Hàng',
+        slug: { current: 'branding-aggressive' },
+        excerpt: 'Chiến lược marketing tấn công mạnh mẽ để xác lập vị thế dẫn đầu trong thời gian ngắn nhất.',
+        description: 'Thương hiệu của bạn phải là ngọn đuốc cháy sáng nhất, dẫn đường cho khách hàng giữa rừng đối thủ.',
+        element: 'fire',
+        publishedAt: '2025-01-25T08:00:00Z',
+        content: [
+            { _key: '1', _type: 'block', children: [{ _type: 'span', text: 'Tấn công vào cảm xúc, thiết lập sự trung thành tuyệt đối. Lửa marketing cần được tiếp nhiên liệu bằng sự sáng tạo không ngừng.' }] }
+        ]
+    },
+    {
+        _id: 'fire-2',
+        title: 'Đội Ngũ Bán Hàng: Những Chiến Binh Thực Thụ',
+        slug: { current: 'chien-binh-sales' },
+        excerpt: 'Cách truyền lửa và duy trì nhiệt huyết cho đội ngũ kinh doanh để đạt được những mục tiêu "không tưởng".',
+        description: 'Biến mỗi nhân viên sales thành một ngọn lửa nhỏ, cùng nhau thiêu cháy mọi rào cản ngăn cách với doanh số.',
+        element: 'fire',
+        publishedAt: '2025-01-27T09:00:00Z',
+        content: [
+            { _key: '1', _type: 'block', children: [{ _type: 'span', text: 'Kỹ năng là quan trọng, nhưng thái độ và tinh thần chiến binh mới là yếu tố quyết định sự bùng nổ.' }] }
+        ]
+    },
+    {
+        _id: 'fire-3',
+        title: 'Đột Phá Công Nghệ: Ánh Sáng Của Tương Lai',
+        slug: { current: 'dot-pha-cong-nghe' },
+        excerpt: 'Ứng dụng AI và chuyển đổi số để tạo ra lợi thế cạnh tranh mang tính hủy diệt đối với các mô hình cũ.',
+        description: 'Công nghệ là ngọn lửa Prométhée giúp doanh nghiệp nâng tầm từ hữu hình lên vô tướng.',
+        element: 'fire',
+        publishedAt: '2025-01-29T10:00:00Z',
+        content: [
+            { _key: '1', _type: 'block', children: [{ _type: 'span', text: 'Nếu không tự mình "đốt" đi những mô hình cũ, bạn sẽ bị ngọn lửa của thị trường thiêu rụi.' }] }
+        ]
+    },
+
+    // --- AIR (KHÍ) ---
+    {
+        _id: 'air-1',
+        title: 'Tốc Độ Là Vũ Khí: Tối Ưu Hóa Thời Gian Phản Hồi',
+        slug: { current: 'toc-do-vu-khi' },
+        excerpt: 'Trong kỷ nguyên số, nhanh không phải là tất cả, nhưng chậm chắc chắn là cái chết.',
+        description: 'Vận hành doanh nghiệp nhẹ nhàng như gió nhưng với tốc độ của cơn bão để thâu tóm cơ hội.',
+        element: 'air',
+        publishedAt: '2025-02-01T08:00:00Z',
+        content: [
+            { _key: '1', _type: 'block', children: [{ _type: 'span', text: 'Làm thế nào để loại bỏ các tầng nấc trung gian, giúp thông tin và quyết định luân chuyển không ma sát?' }] }
+        ]
+    },
+    {
+        _id: 'air-2',
+        title: 'Nghệ Thuật Lắng Nghe Thị Trường (Social Listening)',
+        slug: { current: 'lang-nghe-thi-truong' },
+        excerpt: 'Hiểu thấu những gì khách hàng không nói ra thông qua việc phân tích hành vi và xu hướng thầm lặng.',
+        description: 'Gió mang theo hơi thở của vạn vật. Nhà lãnh đạo thông thái là người biết nghe tiếng gió để đoán định tương lai.',
+        element: 'air',
+        publishedAt: '2025-02-03T09:00:00Z',
+        content: [
+            { _key: '1', _type: 'block', children: [{ _type: 'span', text: 'Dữ liệu không biết nói dối, nhưng chỉ những ai biết "lắng nghe" mới thấy được sự thật phía sau những con số.' }] }
+        ]
+    },
+    {
+        _id: 'air-3',
+        title: 'Truyền Thông Chân Thật: Tiếng Nói Từ Tâm',
+        slug: { current: 'truyen-thong-chan-that' },
+        excerpt: 'Làm sao để thông điệp của bạn lan tỏa mà không cần dùng đến những chiêu trò hào nhoáng?',
+        description: 'Sự thật có sức lan tỏa tự nhiên như không khí. Một khi bạn nói bằng tâm, cả thế giới sẽ lắng nghe.',
+        element: 'air',
+        publishedAt: '2025-02-05T10:00:00Z',
+        content: [
+            { _key: '1', _type: 'block', children: [{ _type: 'span', text: 'Khách hàng ngày nay rất nhạy bén. Họ sẽ cảm nhận được ngay lập tức nếu bạn thiếu sự chân thành.' }] }
+        ]
+    },
+
+    // --- VOID (KHÔNG) ---
+    {
+        _id: 'void-1',
+        title: 'Biết Cái Có Để Thấy Cái Không: Triết Lý Đạo Kinh',
+        slug: { current: 'biet-co-thay-khong' },
+        excerpt: 'Vượt lên trên những tài sản hữu hình để xây dựng giá trị vô hình trường tồn cho doanh nghiệp.',
+        description: 'Đỉnh cao của sự trị vì là "vô vi". Khi mọi thứ hòa nhập vào cái Không, sức mạnh sẽ trở nên vô hạn.',
+        element: 'void',
+        publishedAt: '2025-02-08T08:00:00Z',
+        content: [
+            { _key: '1', _type: 'block', children: [{ _type: 'span', text: 'Cái nhà chỉ dùng được nhờ những khoảng không giữa các bức tường. Doanh nghiệp cũng vậy, giá trị lớn nhất nằm ở những gì không thể chạm tới.' }] }
+        ]
+    },
+    {
+        _id: 'void-2',
+        title: 'Tâm Thế Lãnh Đạo Tỉnh Thức',
+        slug: { current: 'lanh-dao-tinh-thuc' },
+        excerpt: 'Rèn luyện khả năng quan sát mà không phán xét, hành động mà không bám víu vào kết quả.',
+        description: 'Nhìn thấu bản chất của hư vô để đưa ra những quyết định sáng suốt nhất giữa muôn vàn hỗn độn.',
+        element: 'void',
+        publishedAt: '2025-02-10T09:00:00Z',
+        content: [
+            { _key: '1', _type: 'block', children: [{ _type: 'span', text: 'Lãnh đạo không phải là quyền lực, mà là sự hiện diện thuần khiết giúp mọi người xung quanh tỏa sáng.' }] }
+        ]
+    },
+    {
+        _id: 'void-3',
+        title: 'Vô Tướng: Thương Hiệu Trong Tâm Tưởng',
+        slug: { current: 'thuong-hieu-vo-tuong' },
+        excerpt: 'Khi thương hiệu không còn là một cái tên, mà trở thành một hệ tư tưởng, một lối sống.',
+        description: 'Cái Không chứa đựng tất cả. Một thương hiệu vô tướng là một thương hiệu hiện diện ở khắp mọi nơi.',
+        element: 'void',
+        publishedAt: '2025-02-12T10:00:00Z',
+        content: [
+            { _key: '1', _type: 'block', children: [{ _type: 'span', text: 'Mục tiêu cuối cùng là sự giải thoát khỏi những khuôn mẫu định sẵn, để tự do sáng tạo và cống hiến.' }] }
+        ]
+    },
+]

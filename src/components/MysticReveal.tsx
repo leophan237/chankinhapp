@@ -27,26 +27,23 @@ export default function MysticReveal({
       ref={ref}
       initial={{
         opacity: 0,
-        y: 20,
-        filter: 'blur(10px)',
+        filter: 'blur(4px)',
       }}
       animate={
         isInView
           ? {
-              opacity: 1,
-              y: 0,
-              filter: 'blur(0px)',
-            }
+            opacity: 1,
+            filter: 'blur(0px)',
+          }
           : {
-              opacity: 0,
-              y: 20,
-              filter: 'blur(10px)',
-            }
+            opacity: 0,
+            filter: 'blur(4px)',
+          }
       }
       transition={{
-        duration: 1.2,
+        duration: 1.5,
         delay,
-        ease: [0.25, 0.4, 0.25, 1],
+        ease: [0.4, 0, 0.2, 1],
       }}
       className={className}
     >

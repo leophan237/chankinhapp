@@ -16,7 +16,9 @@ import {
   Menu,
   X,
   Map,
+  LogIn,
 } from 'lucide-react'
+import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 
 interface NavItem {
   name: string
@@ -40,6 +42,13 @@ export default function Navigation() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
   const pathname = usePathname()
 
+  if (pathname.startsWith('/admin') || pathname.startsWith('/studio')) {
+    return null
+  }
+
+  // Check if we're on a single post page
+  const isPostPage = pathname.startsWith('/kinh-cac/') && pathname !== '/kinh-cac'
+
   // Dropdown with delayed close for better UX
   return (
     <>
@@ -48,7 +57,10 @@ export default function Navigation() {
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed top-6 left-6 z-50 p-2 rounded-lg bg-card/80 backdrop-blur-sm border border-border/50 hover:border-silver/50 transition-colors lg:hidden"
+        className={`fixed top-6 left-6 z-50 p-2 rounded-lg backdrop-blur-sm border transition-colors lg:hidden ${isPostPage
+          ? 'bg-black/20 border-white/10 hover:border-white/30'
+          : 'bg-card/80 border-border/50 hover:border-silver/50'
+          }`}
         aria-label="Toggle navigation"
       >
         {isOpen ? (
@@ -150,9 +162,8 @@ export default function Navigation() {
                       transition={{ type: 'spring', duration: 0.2 }}
                     >
                       <Icon
-                        className={`w-5 h-5 transition-colors ${
-                          isActive ? 'text-silver' : 'text-muted-foreground group-hover:text-foreground'
-                        }`}
+                        className={`w-5 h-5 transition-colors ${isActive ? 'text-silver' : 'text-muted-foreground group-hover:text-foreground'
+                          }`}
                       />
                     </motion.div>
 
@@ -164,6 +175,24 @@ export default function Navigation() {
               )
             })}
           </nav>
+
+          {/* Auth Section */}
+          <div className="px-4 py-4 border-t border-border/30">
+            <SignedOut>
+              <SignInButton mode="modal">
+                <button className="flex items-center gap-3 w-full px-4 py-3 rounded-lg bg-silver/10 text-silver hover:bg-silver/20 transition-all text-sm font-sans font-light">
+                  <LogIn className="w-5 h-5" />
+                  Đăng nhập
+                </button>
+              </SignInButton>
+            </SignedOut>
+            <SignedIn>
+              <div className="flex items-center justify-between px-4 py-2 bg-silver/5 rounded-lg border border-silver/20">
+                <span className="text-xs text-silver/70 font-light truncate mr-2">Tài khoản của bạn</span>
+                <UserButton afterSignOutUrl="/" />
+              </div>
+            </SignedIn>
+          </div>
 
           {/* Footer Info */}
           <div className="pt-6 border-t border-border/30">
@@ -181,7 +210,10 @@ export default function Navigation() {
       <motion.nav
         initial={{ y: -100 }}
         animate={{ y: 0 }}
-        className="hidden lg:flex fixed top-0 left-0 right-0 z-30 px-6 py-4 bg-background/80 backdrop-blur-md border-b border-border/30"
+        className={`hidden lg:flex fixed top-0 left-0 right-0 z-30 px-6 py-4 backdrop-blur-md border-b transition-all ${isPostPage
+            ? 'bg-transparent border-white/5'
+            : 'bg-background/80 border-border/30'
+          }`}
       >
         <div className="max-w-7xl mx-auto w-full flex items-center justify-between">
           {/* Logo */}
@@ -225,9 +257,8 @@ export default function Navigation() {
 
                   <div className="relative z-10 flex items-center gap-2">
                     <Icon
-                      className={`w-4 h-4 ${
-                        isActive ? 'text-silver' : 'text-muted-foreground group-hover:text-foreground'
-                      }`}
+                      className={`w-4 h-4 ${isActive ? 'text-silver' : 'text-muted-foreground group-hover:text-foreground'
+                        }`}
                     />
                     <span className="text-sm font-light">{item.name}</span>
                   </div>
@@ -286,9 +317,8 @@ export default function Navigation() {
                               key={item.path}
                               href={item.path}
                               onClick={() => setIsDropdownOpen(false)}
-                              className={`flex items-center gap-3 px-4 py-3 transition-colors ${
-                                isActive ? 'bg-silver/10 text-silver' : 'hover:bg-card/50 text-muted-foreground'
-                              }`}
+                              className={`flex items-center gap-3 px-4 py-3 transition-colors ${isActive ? 'bg-silver/10 text-silver' : 'hover:bg-card/50 text-muted-foreground'
+                                }`}
                             >
                               <Icon className="w-4 h-4" />
                               <span className="text-sm font-light">{item.name}</span>
@@ -300,6 +330,20 @@ export default function Navigation() {
                   </motion.div>
                 )}
               </AnimatePresence>
+            </div>
+
+            {/* Auth Buttons */}
+            <div className="ml-4 pl-4 border-l border-border/30 flex items-center">
+              <SignedOut>
+                <SignInButton mode="modal">
+                  <button className="px-5 py-2 rounded-full bg-silver/10 text-silver border border-silver/30 hover:bg-silver/20 transition-all text-sm font-light">
+                    Đăng nhập
+                  </button>
+                </SignInButton>
+              </SignedOut>
+              <SignedIn>
+                <UserButton afterSignOutUrl="/" />
+              </SignedIn>
             </div>
           </div>
         </div>

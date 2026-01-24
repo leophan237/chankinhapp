@@ -1,0 +1,27 @@
+import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
+import { NextResponse } from "next/server";
+
+// Define matching routes for Admin and Studio
+const isAdminRoute = createRouteMatcher(["/admin(.*)", "/studio(.*)"]);
+
+export default clerkMiddleware(async (auth, req) => {
+    if (isAdminRoute(req)) {
+        const { sessionClaims } = await auth();
+
+        // sessionClaims.metadata.role is now type-safe thanks to globals.d.ts
+        if (sessionClaims?.metadata?.role !== "admin") {
+            const url = new URL("/", req.url);
+            url.searchParams.set("error", "access_denied");
+            return NextResponse.redirect(url);
+        }
+    }
+});
+
+export const config = {
+    matcher: [
+        // Skip Next.js internals and all static files, unless found in search params
+        '/((?!_next|[^?]*\\.(?:html?|css|js(?!on)|jpe?g|webp|png|gif|svg|ttf|woff2?|ico|csv|docx?|xlsx?|zip|webmanifest)).*)',
+        // Always run for API routes
+        '/(api|trpc)(.*)',
+    ],
+};

@@ -1,0 +1,1063 @@
+[00:00:00.887] Server  WARN    ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+[00:00:00.970] Server  LOG     ✓ Ready in 772ms
+[00:00:05.595] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:05.844] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:00:08.217] Browser WARN    The default export of @sanity/image-url has been deprecated. Use the named export `createImageUrlBuilder` instead.
+[00:01:42.245] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:42.468] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:01:56.977] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:57.194] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:03:46.136] Browser WARN    'lab(88.4204 0.136495 1.9021)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:03:52.640] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:52.975] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:03:53.437] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:53.650] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:03:54.670] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:54.878] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:04:48.163] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:48.219] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:48.700] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:04:48.723] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:05:00.458] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:00.669] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:05:09.355] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:09.466] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:05:43.526] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:43.736] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:05:44.527] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:44.745] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:05:45.662] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:45.885] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:05:47.435] Browser WARN    'lab(88.4204 0.136495 1.9021)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:06:41.089] Browser WARN    The default export of @sanity/image-url has been deprecated. Use the named export `createImageUrlBuilder` instead.
+[00:06:41.195] Browser WARN    Image with src "https://cdn.sanity.io/images/cshuamqt/production/2a69186604cfd4ebeb092bae0cea44ab6ce229ca-1840x1038.jpg?rect=851,0,989,1033&fit=max&auto=format" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:07:36.797] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:37.413] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:08:04.613] Server  LOG     ✓ Compiled in 86ms
+[00:08:14.808] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:15.118] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:08:22.185] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:22.398] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:08:25.471] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:25.688] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:10:42.256] Server  LOG     ✓ Compiled in 3.5s
+[00:10:44.356] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:44.377] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:57.298] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:10:57.828] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:12:46.229] Browser WARN    The default export of @sanity/image-url has been deprecated. Use the named export `createImageUrlBuilder` instead.
+[00:12:46.229] Browser WARN    Image with src "https://cdn.sanity.io/images/cshuamqt/production/2a69186604cfd4ebeb092bae0cea44ab6ce229ca-1840x1038.jpg?rect=851,0,989,1033&fit=max&auto=format" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:13:10.610] Server  ERROR   ⨯ ReferenceError: hinaMincho is not defined
+[00:13:10.728] Server  ERROR   ⨯ ReferenceError: hinaMincho is not defined
+[00:13:10.742] Server  ERROR   ⨯ ReferenceError: hinaMincho is not defined
+[00:13:10.763] Server  ERROR   ⨯ ReferenceError: hinaMincho is not defined
+[00:13:10.939] Server  LOG     ✓ Compiled in 1260ms
+[00:13:11.313] Server  LOG     ✓ Compiled in 157ms
+[00:13:11.892] Server  WARN    The default export of @sanity/image-url has been deprecated. Use the named export `createImageUrlBuilder` instead.
+[00:13:11.938] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:13:12.114] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:13:12.192] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:13:12.414] Browser WARN    The default export of @sanity/image-url has been deprecated. Use the named export `createImageUrlBuilder` instead.
+[00:13:12.414] Browser WARN    Image with src "https://cdn.sanity.io/images/cshuamqt/production/2a69186604cfd4ebeb092bae0cea44ab6ce229ca-1840x1038.jpg?rect=851,0,989,1033&fit=max&auto=format" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:13:12.414] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:13:12.738] Browser WARN    Image with src "https://cdn.sanity.io/images/cshuamqt/production/2a69186604cfd4ebeb092bae0cea44ab6ce229ca-1840x1038.jpg?rect=851,0,989,1033&fit=max&auto=format" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:15:02.838] Browser WARN    'lab(88.4204 0.136495 1.9021)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:15:03.037] Browser WARN    'lab(88.4204 0.136495 1.9021)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:17:18.561] Browser WARN    Image with src "https://cdn.sanity.io/images/cshuamqt/production/2a69186604cfd4ebeb092bae0cea44ab6ce229ca-1840x1038.jpg?rect=851,0,989,1033" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:21:19.206] Server  LOG     ✓ Compiled in 539ms
+[00:21:28.073] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:21:28.274] Browser WARN    Image with src "https://cdn.sanity.io/images/cshuamqt/production/2a69186604cfd4ebeb092bae0cea44ab6ce229ca-1840x1038.jpg?rect=851,0,989,1033" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:21:29.188] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:21:51.537] Server  LOG     ✓ Compiled in 295ms
+[00:21:53.489] Server  LOG     ✓ Compiled in 66ms
+[00:23:51.856] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:23:52.079] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:23:52.079] Browser WARN    Image with src "https://cdn.sanity.io/images/cshuamqt/production/2a69186604cfd4ebeb092bae0cea44ab6ce229ca-1840x1038.jpg?rect=851,0,989,1033" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:25:12.507] Browser WARN    The default export of @sanity/image-url has been deprecated. Use the named export `createImageUrlBuilder` instead.
+[00:25:12.507] Browser WARN    Image with src "https://cdn.sanity.io/images/cshuamqt/production/2a69186604cfd4ebeb092bae0cea44ab6ce229ca-1840x1038.jpg?rect=851,0,989,1033&fit=max&auto=format" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:25:30.041] Server  ERROR   ⨯ ./src/components/feed/SinglePostView.tsx:115:9
+Parsing ecmascript source code failed
+  113 |             </div>
+  114 |         </div>
+> 115 |         </article >
+      |         ^
+  116 |     )
+  117 | }
+  118 |
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/feed/SinglePostView.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/feed/SinglePostView.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+
+
+
+./src/components/feed/SinglePostView.tsx:115:10
+Parsing ecmascript source code failed
+  113 |             </div>
+  114 |         </div>
+> 115 |         </article >
+      |          ^^^^^^^^^^
+  116 |     )
+  117 | }
+  118 |
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./src/components/feed/SinglePostView.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/feed/SinglePostView.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+
+
+[00:25:30.078] Server  LOG     ✓ Compiled in 306ms
+[00:25:30.181] Browser ERROR   ./src/components/feed/SinglePostView.tsx:115:9
+Parsing ecmascript source code failed
+  113 |             </div>
+  114 |         </div>
+> 115 |         </article >
+      |         ^
+  116 |     )
+  117 | }
+  118 |
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/feed/SinglePostView.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/feed/SinglePostView.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+[00:25:30.182] Browser ERROR   ./src/components/feed/SinglePostView.tsx:115:10
+Parsing ecmascript source code failed
+  113 |             </div>
+  114 |         </div>
+> 115 |         </article >
+      |          ^^^^^^^^^^
+  116 |     )
+  117 | }
+  118 |
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./src/components/feed/SinglePostView.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/feed/SinglePostView.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+[00:25:30.182] Browser ERROR   ./src/components/feed/SinglePostView.tsx:115:9
+Parsing ecmascript source code failed
+  113 |             </div>
+  114 |         </div>
+> 115 |         </article >
+      |         ^
+  116 |     )
+  117 | }
+  118 |
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/feed/SinglePostView.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/feed/SinglePostView.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+[00:25:30.182] Browser ERROR   ./src/components/feed/SinglePostView.tsx:115:10
+Parsing ecmascript source code failed
+  113 |             </div>
+  114 |         </div>
+> 115 |         </article >
+      |          ^^^^^^^^^^
+  116 |     )
+  117 | }
+  118 |
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./src/components/feed/SinglePostView.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/feed/SinglePostView.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+[00:25:30.770] Browser ERROR   ./src/components/feed/SinglePostView.tsx:115:9
+Parsing ecmascript source code failed
+  113 |             </div>
+  114 |         </div>
+> 115 |         </article >
+      |         ^
+  116 |     )
+  117 | }
+  118 |
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/feed/SinglePostView.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/feed/SinglePostView.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+[00:25:30.770] Browser ERROR   ./src/components/feed/SinglePostView.tsx:115:10
+Parsing ecmascript source code failed
+  113 |             </div>
+  114 |         </div>
+> 115 |         </article >
+      |          ^^^^^^^^^^
+  116 |     )
+  117 | }
+  118 |
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./src/components/feed/SinglePostView.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/feed/SinglePostView.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+[00:25:30.770] Browser ERROR   ./src/components/feed/SinglePostView.tsx:115:9
+Parsing ecmascript source code failed
+  113 |             </div>
+  114 |         </div>
+> 115 |         </article >
+      |         ^
+  116 |     )
+  117 | }
+  118 |
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/feed/SinglePostView.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/feed/SinglePostView.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+[00:25:30.770] Browser ERROR   ./src/components/feed/SinglePostView.tsx:115:10
+Parsing ecmascript source code failed
+  113 |             </div>
+  114 |         </div>
+> 115 |         </article >
+      |          ^^^^^^^^^^
+  116 |     )
+  117 | }
+  118 |
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./src/components/feed/SinglePostView.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/feed/SinglePostView.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+[00:25:30.770] Browser ERROR   ./src/components/feed/SinglePostView.tsx:115:9
+Parsing ecmascript source code failed
+  113 |             </div>
+  114 |         </div>
+> 115 |         </article >
+      |         ^
+  116 |     )
+  117 | }
+  118 |
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/feed/SinglePostView.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/feed/SinglePostView.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+[00:25:30.770] Browser ERROR   ./src/components/feed/SinglePostView.tsx:115:10
+Parsing ecmascript source code failed
+  113 |             </div>
+  114 |         </div>
+> 115 |         </article >
+      |          ^^^^^^^^^^
+  116 |     )
+  117 | }
+  118 |
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./src/components/feed/SinglePostView.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/feed/SinglePostView.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+[00:25:30.770] Browser ERROR   ./src/components/feed/SinglePostView.tsx:115:9
+Parsing ecmascript source code failed
+  113 |             </div>
+  114 |         </div>
+> 115 |         </article >
+      |         ^
+  116 |     )
+  117 | }
+  118 |
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/feed/SinglePostView.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/feed/SinglePostView.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+[00:25:30.770] Browser ERROR   ./src/components/feed/SinglePostView.tsx:115:10
+Parsing ecmascript source code failed
+  113 |             </div>
+  114 |         </div>
+> 115 |         </article >
+      |          ^^^^^^^^^^
+  116 |     )
+  117 | }
+  118 |
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./src/components/feed/SinglePostView.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/feed/SinglePostView.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+[00:25:30.772] Browser ERROR   ./src/components/feed/SinglePostView.tsx:115:9
+Parsing ecmascript source code failed
+  113 |             </div>
+  114 |         </div>
+> 115 |         </article >
+      |         ^
+  116 |     )
+  117 | }
+  118 |
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/feed/SinglePostView.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/feed/SinglePostView.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+[00:25:30.772] Browser ERROR   ./src/components/feed/SinglePostView.tsx:115:10
+Parsing ecmascript source code failed
+  113 |             </div>
+  114 |         </div>
+> 115 |         </article >
+      |          ^^^^^^^^^^
+  116 |     )
+  117 | }
+  118 |
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./src/components/feed/SinglePostView.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/feed/SinglePostView.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+[00:25:30.796] Server  ERROR   ⨯ ./src/components/feed/SinglePostView.tsx:115:9
+Parsing ecmascript source code failed
+  113 |             </div>
+  114 |         </div>
+> 115 |         </article >
+      |         ^
+  116 |     )
+  117 | }
+  118 |
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/feed/SinglePostView.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/feed/SinglePostView.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+
+
+
+./src/components/feed/SinglePostView.tsx:115:10
+Parsing ecmascript source code failed
+  113 |             </div>
+  114 |         </div>
+> 115 |         </article >
+      |          ^^^^^^^^^^
+  116 |     )
+  117 | }
+  118 |
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./src/components/feed/SinglePostView.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/feed/SinglePostView.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+
+
+[00:25:30.942] Browser ERROR   ./src/components/feed/SinglePostView.tsx:115:9
+Parsing ecmascript source code failed
+  113 |             </div>
+  114 |         </div>
+> 115 |         </article >
+      |         ^
+  116 |     )
+  117 | }
+  118 |
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/feed/SinglePostView.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/feed/SinglePostView.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+[00:25:30.942] Browser ERROR   ./src/components/feed/SinglePostView.tsx:115:10
+Parsing ecmascript source code failed
+  113 |             </div>
+  114 |         </div>
+> 115 |         </article >
+      |          ^^^^^^^^^^
+  116 |     )
+  117 | }
+  118 |
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./src/components/feed/SinglePostView.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/feed/SinglePostView.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+[00:25:30.942] Browser ERROR   ./src/components/feed/SinglePostView.tsx:115:9
+Parsing ecmascript source code failed
+  113 |             </div>
+  114 |         </div>
+> 115 |         </article >
+      |         ^
+  116 |     )
+  117 | }
+  118 |
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/feed/SinglePostView.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/feed/SinglePostView.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+[00:25:30.942] Browser ERROR   ./src/components/feed/SinglePostView.tsx:115:10
+Parsing ecmascript source code failed
+  113 |             </div>
+  114 |         </div>
+> 115 |         </article >
+      |          ^^^^^^^^^^
+  116 |     )
+  117 | }
+  118 |
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./src/components/feed/SinglePostView.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/feed/SinglePostView.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+[00:25:31.127] Browser ERROR   uncaughtError: Error: ./src/components/feed/SinglePostView.tsx:115:9
+Parsing ecmascript source code failed
+  113 |             </div>
+  114 |         </div>
+> 115 |         </article >
+      |         ^
+  116 |     )
+  117 | }
+  118 |
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/feed/SinglePostView.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/feed/SinglePostView.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+
+
+[00:25:31.288] Browser ERROR   ./src/components/feed/SinglePostView.tsx:115:9
+Parsing ecmascript source code failed
+  113 |             </div>
+  114 |         </div>
+> 115 |         </article >
+      |         ^
+  116 |     )
+  117 | }
+  118 |
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/feed/SinglePostView.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/feed/SinglePostView.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+[00:25:31.288] Browser ERROR   ./src/components/feed/SinglePostView.tsx:115:10
+Parsing ecmascript source code failed
+  113 |             </div>
+  114 |         </div>
+> 115 |         </article >
+      |          ^^^^^^^^^^
+  116 |     )
+  117 | }
+  118 |
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./src/components/feed/SinglePostView.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/feed/SinglePostView.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+[00:25:31.288] Browser ERROR   ./src/components/feed/SinglePostView.tsx:115:9
+Parsing ecmascript source code failed
+  113 |             </div>
+  114 |         </div>
+> 115 |         </article >
+      |         ^
+  116 |     )
+  117 | }
+  118 |
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/feed/SinglePostView.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/feed/SinglePostView.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+[00:25:31.288] Browser ERROR   ./src/components/feed/SinglePostView.tsx:115:10
+Parsing ecmascript source code failed
+  113 |             </div>
+  114 |         </div>
+> 115 |         </article >
+      |          ^^^^^^^^^^
+  116 |     )
+  117 | }
+  118 |
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./src/components/feed/SinglePostView.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/feed/SinglePostView.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+[00:25:31.288] Browser ERROR   ./src/components/feed/SinglePostView.tsx:115:9
+Parsing ecmascript source code failed
+  113 |             </div>
+  114 |         </div>
+> 115 |         </article >
+      |         ^
+  116 |     )
+  117 | }
+  118 |
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/feed/SinglePostView.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/feed/SinglePostView.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+[00:25:31.288] Browser ERROR   ./src/components/feed/SinglePostView.tsx:115:10
+Parsing ecmascript source code failed
+  113 |             </div>
+  114 |         </div>
+> 115 |         </article >
+      |          ^^^^^^^^^^
+  116 |     )
+  117 | }
+  118 |
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./src/components/feed/SinglePostView.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/feed/SinglePostView.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+[00:25:42.302] Server  ERROR   ⨯ ./src/components/feed/SinglePostView.tsx:115:9
+Parsing ecmascript source code failed
+  113 |             </div>
+  114 |         </div>
+> 115 |         </article >
+      |         ^
+  116 |     )
+  117 | }
+  118 |
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/feed/SinglePostView.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/feed/SinglePostView.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+
+
+
+./src/components/feed/SinglePostView.tsx:115:10
+Parsing ecmascript source code failed
+  113 |             </div>
+  114 |         </div>
+> 115 |         </article >
+      |          ^^^^^^^^^^
+  116 |     )
+  117 | }
+  118 |
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./src/components/feed/SinglePostView.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/feed/SinglePostView.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+
+
+[00:25:42.445] Browser ERROR   ./src/components/feed/SinglePostView.tsx:115:9
+Parsing ecmascript source code failed
+  113 |             </div>
+  114 |         </div>
+> 115 |         </article >
+      |         ^
+  116 |     )
+  117 | }
+  118 |
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/feed/SinglePostView.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/feed/SinglePostView.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+[00:25:42.445] Browser ERROR   ./src/components/feed/SinglePostView.tsx:115:10
+Parsing ecmascript source code failed
+  113 |             </div>
+  114 |         </div>
+> 115 |         </article >
+      |          ^^^^^^^^^^
+  116 |     )
+  117 | }
+  118 |
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./src/components/feed/SinglePostView.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/feed/SinglePostView.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+[00:25:42.465] Browser ERROR   uncaughtError: Error: ./src/components/feed/SinglePostView.tsx:115:9
+Parsing ecmascript source code failed
+  113 |             </div>
+  114 |         </div>
+> 115 |         </article >
+      |         ^
+  116 |     )
+  117 | }
+  118 |
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/feed/SinglePostView.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/feed/SinglePostView.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+
+
+[00:25:42.623] Browser ERROR   ./src/components/feed/SinglePostView.tsx:115:9
+Parsing ecmascript source code failed
+  113 |             </div>
+  114 |         </div>
+> 115 |         </article >
+      |         ^
+  116 |     )
+  117 | }
+  118 |
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/feed/SinglePostView.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/feed/SinglePostView.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+[00:25:42.623] Browser ERROR   ./src/components/feed/SinglePostView.tsx:115:10
+Parsing ecmascript source code failed
+  113 |             </div>
+  114 |         </div>
+> 115 |         </article >
+      |          ^^^^^^^^^^
+  116 |     )
+  117 | }
+  118 |
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./src/components/feed/SinglePostView.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/feed/SinglePostView.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+[00:25:42.623] Browser ERROR   ./src/components/feed/SinglePostView.tsx:115:9
+Parsing ecmascript source code failed
+  113 |             </div>
+  114 |         </div>
+> 115 |         </article >
+      |         ^
+  116 |     )
+  117 | }
+  118 |
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/feed/SinglePostView.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/feed/SinglePostView.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+[00:25:42.623] Browser ERROR   ./src/components/feed/SinglePostView.tsx:115:10
+Parsing ecmascript source code failed
+  113 |             </div>
+  114 |         </div>
+> 115 |         </article >
+      |          ^^^^^^^^^^
+  116 |     )
+  117 | }
+  118 |
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./src/components/feed/SinglePostView.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/feed/SinglePostView.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+[00:25:42.624] Browser ERROR   ./src/components/feed/SinglePostView.tsx:115:9
+Parsing ecmascript source code failed
+  113 |             </div>
+  114 |         </div>
+> 115 |         </article >
+      |         ^
+  116 |     )
+  117 | }
+  118 |
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/components/feed/SinglePostView.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/feed/SinglePostView.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+[00:25:42.624] Browser ERROR   ./src/components/feed/SinglePostView.tsx:115:10
+Parsing ecmascript source code failed
+  113 |             </div>
+  114 |         </div>
+> 115 |         </article >
+      |          ^^^^^^^^^^
+  116 |     )
+  117 | }
+  118 |
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./src/components/feed/SinglePostView.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component Browser]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/feed/SinglePostView.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Client Component SSR]
+    ./src/components/feed/PostFeedContainer.tsx [Server Component]
+    ./src/app/kinh-cac/[slug]/page.tsx [Server Component]
+[00:26:09.596] Server  LOG     ✓ Compiled in 121ms
+[00:26:10.588] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:26:10.886] Browser WARN    Clerk: Clerk has been loaded with development keys. Development instances have strict usage limits and should not be used when deploying your application to production. Learn more: https://clerk.com/docs/deployments/overview
+[00:26:10.886] Browser WARN    Image with src "https://cdn.sanity.io/images/cshuamqt/production/2a69186604cfd4ebeb092bae0cea44ab6ce229ca-1840x1038.jpg?rect=851,0,989,1033" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:30:33.305] Browser WARN    The default export of @sanity/image-url has been deprecated. Use the named export `createImageUrlBuilder` instead.

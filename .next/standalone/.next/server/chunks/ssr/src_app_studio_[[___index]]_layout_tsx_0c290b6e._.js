@@ -1,0 +1,3 @@
+module.exports=[605452,a=>{"use strict";var b=a.i(907997);function c({children:a}){return(0,b.jsx)("div",{className:"fixed inset-0 z-[9999] bg-white",children:a})}a.s(["default",()=>c,"metadata",0,{title:"Sanity Studio",description:"Content Management for Digital Monastery"},"viewport",0,{width:"device-width",initialScale:1}])}];
+
+//# sourceMappingURL=src_app_studio_%5B%5B___index%5D%5D_layout_tsx_0c290b6e._.js.map

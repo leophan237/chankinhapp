@@ -1,7 +1,8 @@
 import { createClient } from 'next-sanity'
+import { createImageUrlBuilder } from '@sanity/image-url'
 
 const config = {
-  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
+  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID!,
   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || 'production',
   apiVersion: '2024-01-01',
   useCdn: true,
@@ -9,9 +10,10 @@ const config = {
 
 export const client = createClient(config)
 
-// Helper function to generate image URL with Sanity
+const builder = createImageUrlBuilder(config)
+
 export function urlFor(source: any) {
-  return source
+  return builder.image(source)
 }
 
 export async function getClient() {

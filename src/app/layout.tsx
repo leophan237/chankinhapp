@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Barlow } from "next/font/google";
+import { Barlow, Barlow_Semi_Condensed } from "next/font/google";
+import { ClerkProvider } from "@clerk/nextjs";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 import { ThemeProvider } from "@/components/theme-provider";
@@ -9,6 +10,13 @@ const barlow = Barlow({
   variable: "--font-sans",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "800", "900"],
+  display: "swap",
+});
+
+const barlowSemiCondensed = Barlow_Semi_Condensed({
+  variable: "--font-serif",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
   display: "swap",
 });
 
@@ -39,16 +47,24 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark" suppressHydrationWarning>
-      <body
-        className={`${barlow.variable} antialiased bg-background text-foreground min-h-screen flex flex-col`}
-      >
-        <ThemeProvider defaultTheme="dark" storageKey="cko-theme">
-          <Navigation />
-          <main className="lg:pt-20">{children}</main>
-          <Toaster />
-        </ThemeProvider>
-      </body>
-    </html>
+    <ClerkProvider>
+      <html lang="en" suppressHydrationWarning>
+        <body
+          className={`${barlow.variable} ${barlowSemiCondensed.variable} antialiased bg-background text-foreground min-h-screen flex flex-col`}
+        >
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="dark"
+            enableSystem
+            disableTransitionOnChange
+            storageKey="cko-theme"
+          >
+            <Navigation />
+            <main className="lg:pt-20">{children}</main>
+            <Toaster />
+          </ThemeProvider>
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }

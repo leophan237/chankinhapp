@@ -1,0 +1,13 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/admin/page": "app/admin/page.js",
+  "/dao-trang/page": "app/dao-trang/page.js",
+  "/hanh/page": "app/hanh/page.js",
+  "/kinh-bo/page": "app/kinh-bo/page.js",
+  "/kinh-cac/[slug]/page": "app/kinh-cac/[slug]/page.js",
+  "/kinh-cac/page": "app/kinh-cac/page.js",
+  "/page": "app/page.js",
+  "/studio/[[...index]]/page": "app/studio/[[...index]]/page.js",
+  "/tinh-trang/page": "app/tinh-trang/page.js",
+  "/tong-chi/page": "app/tong-chi/page.js"
+}
