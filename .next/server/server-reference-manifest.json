@@ -21,7 +21,7 @@
           "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
         },
         "app/admin/users/page": {
-          "moduleId": 881628,
+          "moduleId": 808700,
           "async": false,
           "exportedName": "detectKeylessEnvDriftAction",
           "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
@@ -127,7 +127,7 @@
           "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js"
         },
         "app/admin/users/page": {
-          "moduleId": 881628,
+          "moduleId": 808700,
           "async": false,
           "exportedName": "invalidateCacheAction",
           "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js"
@@ -233,7 +233,7 @@
           "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
         },
         "app/admin/users/page": {
-          "moduleId": 881628,
+          "moduleId": 808700,
           "async": false,
           "exportedName": "createOrReadKeylessAction",
           "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
@@ -339,7 +339,7 @@
           "filename": "node_modules/@clerk/nextjs/dist/esm/server/keyless-custom-headers.js"
         },
         "app/admin/users/page": {
-          "moduleId": 881628,
+          "moduleId": 808700,
           "async": false,
           "exportedName": "collectKeylessMetadata",
           "filename": "node_modules/@clerk/nextjs/dist/esm/server/keyless-custom-headers.js"
@@ -445,7 +445,7 @@
           "filename": "node_modules/@clerk/nextjs/dist/esm/server/keyless-custom-headers.js"
         },
         "app/admin/users/page": {
-          "moduleId": 881628,
+          "moduleId": 808700,
           "async": false,
           "exportedName": "formatMetadataHeaders",
           "filename": "node_modules/@clerk/nextjs/dist/esm/server/keyless-custom-headers.js"
@@ -551,7 +551,7 @@
           "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
         },
         "app/admin/users/page": {
-          "moduleId": 881628,
+          "moduleId": 808700,
           "async": false,
           "exportedName": "deleteKeylessAction",
           "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
@@ -657,7 +657,7 @@
           "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
         },
         "app/admin/users/page": {
-          "moduleId": 881628,
+          "moduleId": 808700,
           "async": false,
           "exportedName": "syncKeylessConfigAction",
           "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
@@ -741,6 +741,21 @@
       },
       "filename": "node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js",
       "exportedName": "syncKeylessConfigAction"
+    },
+    "608f36f809e9d9b7b93daea585a914a56bd40c8a43": {
+      "workers": {
+        "app/admin/users/page": {
+          "moduleId": 808700,
+          "async": false,
+          "exportedName": "getUsers",
+          "filename": "src/actions/admin/get-users.ts"
+        }
+      },
+      "layer": {
+        "app/admin/users/page": "rsc"
+      },
+      "filename": "src/actions/admin/get-users.ts",
+      "exportedName": "getUsers"
     }
   },
   "edge": {},

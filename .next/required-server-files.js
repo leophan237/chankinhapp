@@ -65,7 +65,8 @@ self.__SERVER_FILES_MANIFEST={
       "remotePatterns": [
         {
           "protocol": "https",
-          "hostname": "cdn.sanity.io"
+          "hostname": "cdn.sanity.io",
+          "pathname": "/images/**"
         }
       ],
       "qualities": [

@@ -1,48 +1,78 @@
-import { GlassCard } from "@/components/admin/GlassCard";
+import { getUsers } from '@/actions/admin/get-users'
+import { UsersPageClient } from '@/components/admin/UsersPageClient'
+import type { ClerkUser } from '@/types/clerk-user'
 
-export default function AdminUsers() {
+// Force dynamic rendering since we use auth()
+export const dynamic = 'force-dynamic'
+
+/**
+ * Helper function to safely convert a date to timestamp
+ */
+function toTimestamp(date: Date | number | string | null | undefined): number | null {
+  if (!date) return null
+  if (typeof date === 'number') return date
+  try {
+    return new Date(date).getTime()
+  } catch {
+    return null
+  }
+}
+
+export default async function AdminUsers() {
+    // Fetch users from Clerk
+    let clerkUsers: ClerkUser[] = []
+    try {
+        const fetchedUsers = await getUsers(100) // Fetch up to 100 users
+        
+        // Map Clerk User objects to ClerkUser type expected by components
+        clerkUsers = fetchedUsers.map((user): ClerkUser => {
+          // Handle emailAddresses - Clerk returns array of EmailAddress objects
+          const emailAddresses = Array.isArray(user.emailAddresses)
+            ? user.emailAddresses.map((email: any) => ({
+                emailAddress: typeof email === 'string' ? email : email?.emailAddress || email?.email_address || ''
+              })).filter((e: any) => e.emailAddress)
+            : []
+
+          // Handle dates - Clerk may return Date objects or timestamps
+          const createdAt = toTimestamp((user as any).createdAt || (user as any).created_at || Date.now())
+          const lastActiveAt = toTimestamp((user as any).lastActiveAt || (user as any).last_active_at || null)
+
+          return {
+            id: user.id,
+            firstName: user.firstName || null,
+            lastName: user.lastName || null,
+            username: user.username || null,
+            imageUrl: user.imageUrl || '',
+            emailAddresses,
+            publicMetadata: user.publicMetadata || {},
+            createdAt: createdAt || Date.now(),
+            lastActiveAt,
+          }
+        })
+    } catch (error) {
+        console.error('Failed to fetch users:', error)
+        // Continue with empty array if fetch fails
+    }
+
     return (
-        <div className="space-y-10 animate-fadeIn">
+        <div className="space-y-6 animate-fadeIn">
+            {/* Header */}
             <header>
-                <p className="text-[10px] text-accent uppercase font-bold tracking-[0.3em] mb-1">Entity Management</p>
-                <h1 className="text-4xl font-extrabold tracking-tight">Disciples</h1>
+                <p className="text-[10px] text-accent uppercase font-bold tracking-[0.3em] mb-1">
+                    Entity Management
+                </p>
+                <h1 className="text-4xl font-extrabold tracking-tight mb-2">
+                    Quản Lý Đệ Tử
+                </h1>
+                <p className="text-sm text-muted-foreground">
+                    Total Users: <span className="font-semibold text-foreground">{clerkUsers.length}</span>
+                </p>
             </header>
 
-            <GlassCard className="overflow-hidden">
-                <div className="overflow-x-auto">
-                    <table className="w-full text-left">
-                        <thead>
-                            <tr className="text-[10px] uppercase tracking-[0.2em] text-gray-400 font-bold border-b border-black/5 dark:border-white/5 bg-black/[0.02] dark:bg-white/[0.02]">
-                                <th className="p-6">Name</th>
-                                <th className="p-6">Email</th>
-                                <th className="p-6">Status</th>
-                                <th className="p-6 text-right">Level</th>
-                            </tr>
-                        </thead>
-                        <tbody className="text-sm font-medium">
-                            {[
-                                { name: "Thiền Điền", email: "thien.dien@cko.com", status: "Active", level: "Adept" },
-                                { name: "Minh Tâm", email: "minh.tam@cko.com", status: "Active", level: "Seeker" },
-                                { name: "Nguyên An", email: "nguyen.an@cko.com", status: "Paused", level: "Novice" },
-                            ].map((user, i) => (
-                                <tr key={i} className="group border-b border-black/[0.02] dark:border-white/[0.02] last:border-0 hover:bg-black/[0.01] dark:hover:bg-white/[0.01] transition-colors">
-                                    <td className="p-6 text-gray-900 dark:text-white font-bold">{user.name}</td>
-                                    <td className="p-6 text-muted-foreground">{user.email}</td>
-                                    <td className="p-6">
-                                        <span className={`text-[10px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-xl border ${user.status === 'Active'
-                                                ? 'text-green-500 bg-green-500/5 border-green-500/10'
-                                                : 'text-zinc-500 bg-zinc-500/5 border-zinc-500/10'
-                                            }`}>
-                                            {user.status}
-                                        </span>
-                                    </td>
-                                    <td className="p-6 text-right text-gray-400 font-bold tracking-widest">{user.level}</td>
-                                </tr>
-                            ))}
-                        </tbody>
-                    </table>
-                </div>
-            </GlassCard>
+            {/* Toolbar and Users Table with Client-side Search */}
+            <div className="gap-6">
+                <UsersPageClient initialUsers={clerkUsers} />
+            </div>
         </div>
-    );
+    )
 }
