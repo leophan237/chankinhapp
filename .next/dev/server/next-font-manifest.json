@@ -1,96 +1,5 @@
 {
   "app": {
-    "[project]/src/app/admin/orders/page": [
-      "static/media/235a0ef330592118-s.p.b3cd1641.woff2",
-      "static/media/c6e2684784a55443-s.p.ea91da97.woff2",
-      "static/media/a083361d37caf3d1-s.p.5c0d0b0d.woff2",
-      "static/media/6c98c9fb873995d2-s.p.4a6499bc.woff2",
-      "static/media/0595f7052377a1a2-s.p.0de08f1e.woff2",
-      "static/media/efe66f9dab7e6ce7-s.p.a25a39ba.woff2",
-      "static/media/030c76ff40bce98c-s.p.c4196caa.woff2",
-      "static/media/4b23c5ee480ee380-s.p.046c0c63.woff2",
-      "static/media/6a1d08cf467f0848-s.p.17290e4b.woff2",
-      "static/media/520c929efec0b33f-s.p.5a7acb8b.woff2",
-      "static/media/490cbca7f386131e-s.p.116c03d8.woff2"
-    ],
-    "[project]/src/app/admin/page": [
-      "static/media/235a0ef330592118-s.p.b3cd1641.woff2",
-      "static/media/c6e2684784a55443-s.p.ea91da97.woff2",
-      "static/media/a083361d37caf3d1-s.p.5c0d0b0d.woff2",
-      "static/media/6c98c9fb873995d2-s.p.4a6499bc.woff2",
-      "static/media/0595f7052377a1a2-s.p.0de08f1e.woff2",
-      "static/media/efe66f9dab7e6ce7-s.p.a25a39ba.woff2",
-      "static/media/030c76ff40bce98c-s.p.c4196caa.woff2",
-      "static/media/4b23c5ee480ee380-s.p.046c0c63.woff2",
-      "static/media/6a1d08cf467f0848-s.p.17290e4b.woff2",
-      "static/media/520c929efec0b33f-s.p.5a7acb8b.woff2",
-      "static/media/490cbca7f386131e-s.p.116c03d8.woff2"
-    ],
-    "[project]/src/app/admin/users/page": [
-      "static/media/235a0ef330592118-s.p.b3cd1641.woff2",
-      "static/media/c6e2684784a55443-s.p.ea91da97.woff2",
-      "static/media/a083361d37caf3d1-s.p.5c0d0b0d.woff2",
-      "static/media/6c98c9fb873995d2-s.p.4a6499bc.woff2",
-      "static/media/0595f7052377a1a2-s.p.0de08f1e.woff2",
-      "static/media/efe66f9dab7e6ce7-s.p.a25a39ba.woff2",
-      "static/media/030c76ff40bce98c-s.p.c4196caa.woff2",
-      "static/media/4b23c5ee480ee380-s.p.046c0c63.woff2",
-      "static/media/6a1d08cf467f0848-s.p.17290e4b.woff2",
-      "static/media/520c929efec0b33f-s.p.5a7acb8b.woff2",
-      "static/media/490cbca7f386131e-s.p.116c03d8.woff2"
-    ],
-    "[project]/src/app/hanh/page": [
-      "static/media/235a0ef330592118-s.p.b3cd1641.woff2",
-      "static/media/c6e2684784a55443-s.p.ea91da97.woff2",
-      "static/media/a083361d37caf3d1-s.p.5c0d0b0d.woff2",
-      "static/media/6c98c9fb873995d2-s.p.4a6499bc.woff2",
-      "static/media/0595f7052377a1a2-s.p.0de08f1e.woff2",
-      "static/media/efe66f9dab7e6ce7-s.p.a25a39ba.woff2",
-      "static/media/030c76ff40bce98c-s.p.c4196caa.woff2",
-      "static/media/4b23c5ee480ee380-s.p.046c0c63.woff2",
-      "static/media/6a1d08cf467f0848-s.p.17290e4b.woff2",
-      "static/media/520c929efec0b33f-s.p.5a7acb8b.woff2",
-      "static/media/490cbca7f386131e-s.p.116c03d8.woff2"
-    ],
-    "[project]/src/app/kinh-bo/page": [
-      "static/media/235a0ef330592118-s.p.b3cd1641.woff2",
-      "static/media/c6e2684784a55443-s.p.ea91da97.woff2",
-      "static/media/a083361d37caf3d1-s.p.5c0d0b0d.woff2",
-      "static/media/6c98c9fb873995d2-s.p.4a6499bc.woff2",
-      "static/media/0595f7052377a1a2-s.p.0de08f1e.woff2",
-      "static/media/efe66f9dab7e6ce7-s.p.a25a39ba.woff2",
-      "static/media/030c76ff40bce98c-s.p.c4196caa.woff2",
-      "static/media/4b23c5ee480ee380-s.p.046c0c63.woff2",
-      "static/media/6a1d08cf467f0848-s.p.17290e4b.woff2",
-      "static/media/520c929efec0b33f-s.p.5a7acb8b.woff2",
-      "static/media/490cbca7f386131e-s.p.116c03d8.woff2"
-    ],
-    "[project]/src/app/kinh-cac/[slug]/page": [
-      "static/media/235a0ef330592118-s.p.b3cd1641.woff2",
-      "static/media/c6e2684784a55443-s.p.ea91da97.woff2",
-      "static/media/a083361d37caf3d1-s.p.5c0d0b0d.woff2",
-      "static/media/6c98c9fb873995d2-s.p.4a6499bc.woff2",
-      "static/media/0595f7052377a1a2-s.p.0de08f1e.woff2",
-      "static/media/efe66f9dab7e6ce7-s.p.a25a39ba.woff2",
-      "static/media/030c76ff40bce98c-s.p.c4196caa.woff2",
-      "static/media/4b23c5ee480ee380-s.p.046c0c63.woff2",
-      "static/media/6a1d08cf467f0848-s.p.17290e4b.woff2",
-      "static/media/520c929efec0b33f-s.p.5a7acb8b.woff2",
-      "static/media/490cbca7f386131e-s.p.116c03d8.woff2"
-    ],
-    "[project]/src/app/kinh-cac/page": [
-      "static/media/235a0ef330592118-s.p.b3cd1641.woff2",
-      "static/media/c6e2684784a55443-s.p.ea91da97.woff2",
-      "static/media/a083361d37caf3d1-s.p.5c0d0b0d.woff2",
-      "static/media/6c98c9fb873995d2-s.p.4a6499bc.woff2",
-      "static/media/0595f7052377a1a2-s.p.0de08f1e.woff2",
-      "static/media/efe66f9dab7e6ce7-s.p.a25a39ba.woff2",
-      "static/media/030c76ff40bce98c-s.p.c4196caa.woff2",
-      "static/media/4b23c5ee480ee380-s.p.046c0c63.woff2",
-      "static/media/6a1d08cf467f0848-s.p.17290e4b.woff2",
-      "static/media/520c929efec0b33f-s.p.5a7acb8b.woff2",
-      "static/media/490cbca7f386131e-s.p.116c03d8.woff2"
-    ],
     "[project]/src/app/page": [
       "static/media/235a0ef330592118-s.p.b3cd1641.woff2",
       "static/media/c6e2684784a55443-s.p.ea91da97.woff2",
@@ -105,19 +14,6 @@
       "static/media/490cbca7f386131e-s.p.116c03d8.woff2"
     ],
     "[project]/src/app/studio/[[...index]]/page": [
-      "static/media/235a0ef330592118-s.p.b3cd1641.woff2",
-      "static/media/c6e2684784a55443-s.p.ea91da97.woff2",
-      "static/media/a083361d37caf3d1-s.p.5c0d0b0d.woff2",
-      "static/media/6c98c9fb873995d2-s.p.4a6499bc.woff2",
-      "static/media/0595f7052377a1a2-s.p.0de08f1e.woff2",
-      "static/media/efe66f9dab7e6ce7-s.p.a25a39ba.woff2",
-      "static/media/030c76ff40bce98c-s.p.c4196caa.woff2",
-      "static/media/4b23c5ee480ee380-s.p.046c0c63.woff2",
-      "static/media/6a1d08cf467f0848-s.p.17290e4b.woff2",
-      "static/media/520c929efec0b33f-s.p.5a7acb8b.woff2",
-      "static/media/490cbca7f386131e-s.p.116c03d8.woff2"
-    ],
-    "[project]/src/app/tong-chi/page": [
       "static/media/235a0ef330592118-s.p.b3cd1641.woff2",
       "static/media/c6e2684784a55443-s.p.ea91da97.woff2",
       "static/media/a083361d37caf3d1-s.p.5c0d0b0d.woff2",

@@ -1,9 +1,7 @@
-import { client } from '@/sanity/lib/client'
+import { sanityFetch } from '@/sanity/lib/fetch'
 import { groq } from 'next-sanity'
 import LibraryClientView from '@/components/feed/LibraryClientView'
 import { MOCK_POSTS } from '@/lib/mockData'
-
-export const revalidate = 60
 
 async function getPosts() {
   const query = groq`*[_type == "post"] | order(publishedAt desc) {
@@ -17,7 +15,10 @@ async function getPosts() {
   }`
 
   try {
-    const sanityData = await client.fetch(query)
+    const sanityData = await sanityFetch<any[]>({
+      query,
+      tags: ['post'],
+    })
     return sanityData || []
   } catch (error) {
     console.error("Failed to fetch posts from Sanity:", error)

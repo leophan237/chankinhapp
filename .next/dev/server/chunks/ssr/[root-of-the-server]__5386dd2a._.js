@@ -48,7 +48,9 @@ function assertValue(v, errorMessage) {
 
 __turbopack_context__.s([
     "client",
-    ()=>client
+    ()=>client,
+    "token",
+    ()=>token
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$sanity$2f$client$2f$dist$2f$index$2e$browser$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/@sanity/client/dist/index.browser.js [app-rsc] (ecmascript) <locals>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sanity$2f$env$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/sanity/env.ts [app-rsc] (ecmascript)");
@@ -58,8 +60,13 @@ const client = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$
     apiVersion: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sanity$2f$env$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["apiVersion"],
     dataset: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sanity$2f$env$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["dataset"],
     projectId: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sanity$2f$env$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["projectId"],
-    useCdn: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sanity$2f$env$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["useCdn"]
+    useCdn: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sanity$2f$env$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["useCdn"],
+    stega: {
+        enabled: process.env.NEXT_PUBLIC_VERCEL_ENV === 'preview',
+        studioUrl: '/studio'
+    }
 });
+const token = process.env.SANITY_API_READ_TOKEN;
 }),
 "[project]/src/components/feed/LibraryClientView.tsx [app-rsc] (client reference proxy) <module evaluation>", ((__turbopack_context__) => {
 "use strict";

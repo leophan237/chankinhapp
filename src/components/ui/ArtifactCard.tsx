@@ -2,7 +2,7 @@
 
 import React, { useRef, useState } from 'react'
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion'
-import { LucideIcon } from 'lucide-react'
+import IconResolver from './IconResolver'
 
 interface ArtifactCardProps {
     name: string
@@ -11,7 +11,7 @@ interface ArtifactCardProps {
     category: string
     status: string
     year: string
-    icon: LucideIcon
+    icon: string | { name: string }
     details: string[]
     onAcquire?: () => void
 }
@@ -101,7 +101,7 @@ export default function ArtifactCard({
                         >
                             {/* The Symbol */}
                             <div className="relative z-10 w-32 h-32 md:w-40 md:h-40 rounded-2xl border border-silver/10 bg-gradient-to-br from-white/10 to-transparent flex items-center justify-center shadow-inner overflow-hidden">
-                                <Icon className="w-16 h-16 md:w-20 md:h-20 text-silver/40 drop-shadow-[0_0_15px_rgba(197,160,89,0.3)]" />
+                                <IconResolver icon={Icon} className="w-16 h-16 md:w-20 md:h-20 text-silver/40 drop-shadow-[0_0_15px_rgba(197,160,89,0.3)]" />
 
                                 {/* Inner pulse effect */}
                                 <motion.div

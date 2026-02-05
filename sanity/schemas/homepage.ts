@@ -29,13 +29,13 @@ export const homepage = defineType({
             name: 'buttonText',
             title: 'Nút bấm',
             type: 'string',
-            initialValue: 'Bước vào',
+            initialValue: 'Khai phá',
         }),
         defineField({
             name: 'bottomQuote',
             title: 'Câu trích dẫn cuối trang',
             type: 'string',
-            initialValue: 'MỌI CON ĐƯỜNG ĐỀU DẪN VÀO BÊN TRONG',
+            initialValue: 'VẠN SỰ BẮT ĐẦU TỪ MỘT BƯỚC CHÂN',
         }),
     ],
     preview: {

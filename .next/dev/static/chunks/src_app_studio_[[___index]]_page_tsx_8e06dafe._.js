@@ -1,10 +1,10 @@
 (globalThis.TURBOPACK_CHUNK_LISTS || (globalThis.TURBOPACK_CHUNK_LISTS = [])).push({
     script: typeof document === "object" ? document.currentScript : undefined,
     chunks: [
-  "static/chunks/node_modules_7d1f3b89._.js",
+  "static/chunks/node_modules_56ae03c0._.js",
   "static/chunks/node_modules_next_dist_52737bf4._.js",
   "static/chunks/node_modules_sanity_lib__chunks-es_pane_0178ed76.js",
-  "static/chunks/node_modules_sanity_lib__chunks-es_bfbe7b07._.js",
+  "static/chunks/node_modules_sanity_lib__chunks-es_78e75d82._.js",
   "static/chunks/node_modules_sanity_lib_index_aed97678.js",
   "static/chunks/node_modules_sanity_lib_623264ec._.js",
   "static/chunks/node_modules_rxjs_dist_esm5_internal_b297a723._.js",
@@ -27,12 +27,12 @@
   "static/chunks/node_modules_@sentry_browser_build_npm_esm_456f7e64._.js",
   "static/chunks/node_modules_polished_dist_polished_esm_714c8fb0.js",
   "static/chunks/node_modules_@tanstack_table-core_build_lib_index_mjs_b0999871._.js",
-  "static/chunks/node_modules_@sanity_b535a195._.js",
+  "static/chunks/node_modules_@sanity_6441d344._.js",
   "static/chunks/ce3c5_2788344c._.js",
   "static/chunks/node_modules_@floating-ui_1b6e7b6d._.js",
   "static/chunks/node_modules_@portabletext_607e8949._.js",
   "static/chunks/node_modules_c2bf8fe2._.js",
-  "static/chunks/_f7629613._.js"
+  "static/chunks/_d6db4d36._.js"
 ],
     source: "dynamic"
 });

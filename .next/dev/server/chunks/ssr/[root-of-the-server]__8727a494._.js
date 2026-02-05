@@ -81,6 +81,8 @@ module.exports = mod;
 "use strict";
 
 __turbopack_context__.s([
+    "GET_JOBS_QUERY",
+    ()=>GET_JOBS_QUERY,
     "client",
     ()=>client,
     "getClient",
@@ -107,6 +109,18 @@ async function getClient() {
     const { createClient } = await __turbopack_context__.A("[project]/node_modules/next-sanity/dist/index.js [app-ssr] (ecmascript, async loader)");
     return createClient(config);
 }
+const GET_JOBS_QUERY = `*[_type == "job" && !(_id in path("drafts.**"))] | order(publishedAt desc) {
+  _id,
+  title,
+  department,
+  location,
+  type,
+  salary,
+  description,
+  larkDocUrl,
+  larkFormUrl,
+  publishedAt
+}`;
 }),
 "[project]/src/components/RichTextComponents.tsx [app-ssr] (ecmascript)", ((__turbopack_context__) => {
 "use strict";

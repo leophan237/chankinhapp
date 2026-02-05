@@ -21,3 +21,16 @@ export async function getClient() {
   return createClient(config)
 }
 
+export const GET_JOBS_QUERY = `*[_type == "job" && !(_id in path("drafts.**"))] | order(publishedAt desc) {
+  _id,
+  title,
+  department,
+  location,
+  type,
+  salary,
+  description,
+  larkDocUrl,
+  larkFormUrl,
+  publishedAt
+}`
+

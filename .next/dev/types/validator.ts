@@ -74,6 +74,15 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   type __Unused = __Check
 }
 
+// Validate ../../../src/app/chieu-mo/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/chieu-mo">> = Specific
+  const handler = {} as typeof import("../../../src/app/chieu-mo/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
 // Validate ../../../src/app/dao-trang/page.tsx
 {
   type __IsExpected<Specific extends AppPageConfig<"/dao-trang">> = Specific
@@ -168,6 +177,24 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
 {
   type __IsExpected<Specific extends RouteHandlerConfig<"/api/courses">> = Specific
   const handler = {} as typeof import("../../../src/app/api/courses/route.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../src/app/api/disable-draft/route.ts
+{
+  type __IsExpected<Specific extends RouteHandlerConfig<"/api/disable-draft">> = Specific
+  const handler = {} as typeof import("../../../src/app/api/disable-draft/route.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../src/app/api/draft/route.ts
+{
+  type __IsExpected<Specific extends RouteHandlerConfig<"/api/draft">> = Specific
+  const handler = {} as typeof import("../../../src/app/api/draft/route.js")
   type __Check = __IsExpected<typeof handler>
   // @ts-ignore
   type __Unused = __Check

@@ -5,6 +5,8 @@ import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 import { ThemeProvider } from "@/components/theme-provider";
 import Navigation from "@/components/navigation";
+import { draftMode } from "next/headers";
+import VisualEditing from "@/components/VisualEditing";
 
 const barlow = Barlow({
   variable: "--font-sans",
@@ -41,7 +43,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -62,6 +64,7 @@ export default function RootLayout({
             <Navigation />
             <main className="lg:pt-20">{children}</main>
             <Toaster />
+            {(await draftMode()).isEnabled && <VisualEditing />}
           </ThemeProvider>
         </body>
       </html>

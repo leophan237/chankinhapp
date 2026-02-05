@@ -1,12 +1,5 @@
 {
-  "/admin/orders/page": "app/admin/orders/page.js",
-  "/admin/page": "app/admin/page.js",
-  "/admin/users/page": "app/admin/users/page.js",
-  "/hanh/page": "app/hanh/page.js",
-  "/kinh-bo/page": "app/kinh-bo/page.js",
-  "/kinh-cac/[slug]/page": "app/kinh-cac/[slug]/page.js",
-  "/kinh-cac/page": "app/kinh-cac/page.js",
+  "/api/draft/route": "app/api/draft/route.js",
   "/page": "app/page.js",
-  "/studio/[[...index]]/page": "app/studio/[[...index]]/page.js",
-  "/tong-chi/page": "app/tong-chi/page.js"
+  "/studio/[[...index]]/page": "app/studio/[[...index]]/page.js"
 }
