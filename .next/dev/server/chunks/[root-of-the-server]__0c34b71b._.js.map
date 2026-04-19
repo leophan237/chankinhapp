@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 52, "column": 0}, "map": {"version":3,"sources":["file:///Users/leo/Documents/GitHub/chankinhapp/src/app/api/draft/route.ts"],"sourcesContent":["\nimport { draftMode } from 'next/headers'\nimport { redirect } from 'next/navigation'\n\nexport async function GET(request: Request) {\n    (await draftMode()).enable()\n    redirect('/')\n}\n"],"names":[],"mappings":";;;;AACA;AACA;AAAA;;;AAEO,eAAe,IAAI,OAAgB;IACtC,CAAC,MAAM,IAAA,8IAAS,GAAE,EAAE,MAAM;IAC1B,IAAA,mMAAQ,EAAC;AACb"}}]
-}

@@ -1,5 +1,0 @@
-{
-  "/api/draft/route": "app/api/draft/route.js",
-  "/page": "app/page.js",
-  "/studio/[[...index]]/page": "app/studio/[[...index]]/page.js"
-}

@@ -1,6 +1,0 @@
-1:"$Sreact.fragment"
-2:I[254909,["/_next/static/chunks/442a64f8e01a213b.js","/_next/static/chunks/87ea1ecc762df4d8.js","/_next/static/chunks/5ed78ac015233d5a.js","/_next/static/chunks/3317c7c4ab0fb650.js","/_next/static/chunks/00d1553715fa78df.js","/_next/static/chunks/4ed8f7aeddb64c4c.js"],"default"]
-3:I[897367,["/_next/static/chunks/38a8dbe2c5c26331.js","/_next/static/chunks/173589aeb0789423.js"],"OutletBoundary"]
-4:"$Sreact.suspense"
-0:{"buildId":"P_U8uCpKeE2QBoTwRxIr_","rsc":["$","$1","c",{"children":[["$","$L2",null,{"data":{"_createdAt":"2026-01-24T14:17:23Z","_id":"9a1a5605-4c60-48c4-8f1a-4855ed3b6ab2","_rev":"7oBj0ve7a1a3mP15UMmQnK","_type":"homepage","_updatedAt":"2026-01-24T14:17:25Z","bottomQuote":"VẠN SỰ BẮT ĐẦU TỪ MỘT BƯỚC CHÂN ","buttonText":"Khai phá","heroSubtitle":"Digital Monastery for Entrepreneurs","heroTitle":"CHÂN KINH GROUP","introduction":"Nơi ranh giới giữa thế giới vật chất và tinh thần mờ nhạt. Một không gian số cho những người doanh nhân tìm kiếm sự bình an trong tâm hồn."}}],[["$","script","script-0",{"src":"/_next/static/chunks/4ed8f7aeddb64c4c.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"loading":null,"isPartial":false}
-5:null

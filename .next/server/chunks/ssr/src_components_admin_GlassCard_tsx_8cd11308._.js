@@ -1,3 +1,0 @@
-module.exports=[575513,a=>{"use strict";var b=a.i(187924),c=a.i(368114);function d({children:a,className:d,hoverEffect:e=!0}){return(0,b.jsx)("div",{className:(0,c.cn)("rounded-[2rem] backdrop-blur-md transition-all duration-300","bg-white/70 border border-white/40 shadow-sm","dark:bg-black/20 dark:border-white/10 dark:shadow-lg",e&&"hover:scale-[1.01] hover:shadow-xl dark:hover:shadow-black/40",d),children:a})}a.s(["GlassCard",()=>d])}];
-
-//# sourceMappingURL=src_components_admin_GlassCard_tsx_8cd11308._.js.map
