@@ -57,10 +57,7 @@ export default function Navigation() {
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
         onClick={() => setIsOpen(!isOpen)}
-        className={`fixed top-6 left-6 z-50 p-2 rounded-lg backdrop-blur-sm border transition-colors lg:hidden ${isPostPage
-          ? 'bg-black/20 border-white/10 hover:border-white/30'
-          : 'bg-card/80 border-border/50 hover:border-silver/50'
-          }`}
+        className={`absolute top-6 left-6 z-50 p-2 rounded-lg transition-colors lg:hidden text-silver/70 hover:text-white`}
         aria-label="Toggle navigation"
       >
         {isOpen ? (
@@ -88,7 +85,7 @@ export default function Navigation() {
         initial={{ x: '-100%' }}
         animate={{ x: isOpen ? 0 : '-100%' }}
         transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-        className="fixed top-0 left-0 h-full w-72 bg-background/95 backdrop-blur-md border-r border-border/30 z-40 overflow-y-auto lg:hidden"
+        className="fixed top-0 left-0 h-full w-72 bg-black/60 backdrop-blur-xl border-r border-white/10 z-40 overflow-y-auto lg:hidden"
       >
         <div className="p-6 space-y-8">
           {/* Logo Section */}
@@ -210,10 +207,7 @@ export default function Navigation() {
       <motion.nav
         initial={{ y: -100 }}
         animate={{ y: 0 }}
-        className={`hidden lg:flex fixed top-0 left-0 right-0 z-30 px-6 py-4 backdrop-blur-md border-b transition-all ${isPostPage
-            ? 'bg-transparent border-white/5'
-            : 'bg-background/80 border-border/30'
-          }`}
+        className={`hidden lg:flex absolute top-0 left-0 right-0 z-30 px-6 py-4 transition-all bg-transparent`}
       >
         <div className="max-w-7xl mx-auto w-full flex items-center justify-between">
           {/* Logo */}
@@ -307,7 +301,7 @@ export default function Navigation() {
                       className="py-12 -mx-4 -my-4"
                     >
                       {/* Dropdown content */}
-                      <div className="relative mt-2 w-48 bg-card/95 backdrop-blur-md border border-border/50 rounded-lg shadow-xl overflow-hidden">
+                      <div className="relative mt-2 w-48 bg-black/60 backdrop-blur-xl border border-white/10 rounded-lg shadow-xl overflow-hidden">
                         {navItems.slice(5).map((item) => {
                           const isActive = pathname === item.path
                           const Icon = item.icon
@@ -317,7 +311,7 @@ export default function Navigation() {
                               key={item.path}
                               href={item.path}
                               onClick={() => setIsDropdownOpen(false)}
-                              className={`flex items-center gap-3 px-4 py-3 transition-colors ${isActive ? 'bg-silver/10 text-silver' : 'hover:bg-card/50 text-muted-foreground'
+                              className={`flex items-center gap-3 px-4 py-3 transition-colors ${isActive ? 'bg-silver/20 text-silver' : 'hover:bg-white/10 text-muted-foreground'
                                 }`}
                             >
                               <Icon className="w-4 h-4" />
