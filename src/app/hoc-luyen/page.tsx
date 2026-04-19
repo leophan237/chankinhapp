@@ -1,8 +1,10 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { GraduationCap, Lock, PlayCircle, CheckCircle, Clock, Trophy } from 'lucide-react'
+import { GraduationCap, Lock, PlayCircle, CheckCircle, Clock, Trophy, Rocket, Calculator, FileCheck, Search } from 'lucide-react'
 import { useState } from 'react'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import { BusinessValidator } from '@/components/hoc-luyen/BusinessValidator'
 
 export default function HocLuyenPage() {
   const [isAuthenticated, setIsAuthenticated] = useState(false)
@@ -125,95 +127,162 @@ export default function HocLuyenPage() {
           </div>
         </motion.div>
 
-        {/* Courses Grid */}
-        <motion.div className="space-y-6">
-          {courses.map((course, index) => (
-            <motion.div
-              key={course.id}
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 + index * 0.1 }}
-              className="p-6 rounded-xl border border-border/50 bg-card/50 backdrop-blur-sm hover:border-silver/30 transition-all duration-300"
-            >
-              <div className="flex flex-col md:flex-row gap-6">
-                {/* Course Progress Indicator */}
-                <div className="flex-shrink-0">
-                  <div className="w-24 h-24 rounded-xl border-2 border-silver/30 flex items-center justify-center bg-background relative">
-                    <svg className="w-20 h-20 -rotate-90">
-                      <circle
-                        cx="40"
-                        cy="40"
-                        r="35"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="4"
-                        className="text-border/30"
-                      />
-                      <motion.circle
-                        cx="40"
-                        cy="40"
-                        r="35"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="4"
-                        className="text-silver"
-                        strokeLinecap="round"
-                        initial={{ pathLength: 0 }}
-                        animate={{ pathLength: course.progress / 100 }}
-                        transition={{ duration: 1.5, delay: 0.5 + index * 0.2 }}
-                        strokeDasharray={220}
-                        strokeDashoffset={220}
-                      />
-                    </svg>
-                    <span className="absolute text-xl font-sans text-silver">{course.progress}%</span>
-                  </div>
-                </div>
+        {/* Tabs for Navigation */}
+        <Tabs defaultValue="tools" className="space-y-8">
+          <TabsList className="bg-card/50 border border-border/50 p-1 rounded-xl">
+            <TabsTrigger value="tools" className="px-8 py-2 rounded-lg data-[state=active]:bg-silver/10 data-[state=active]:text-silver transition-all">
+              <Rocket className="w-4 h-4 mr-2" />
+              Startup Tools
+            </TabsTrigger>
+            <TabsTrigger value="courses" className="px-8 py-2 rounded-lg data-[state=active]:bg-silver/10 data-[state=active]:text-silver transition-all">
+              <GraduationCap className="w-4 h-4 mr-2" />
+              Sacred Learning
+            </TabsTrigger>
+          </TabsList>
 
-                {/* Course Details */}
-                <div className="flex-1 space-y-4">
-                  <div className="flex items-start justify-between">
-                    <div className="flex-1">
-                      <h3 className="text-2xl font-sans text-gradient-silver font-semibold mb-1">
-                        {course.title}
-                      </h3>
-                      <div className="flex items-center gap-4 text-sm text-muted-foreground">
-                        <span className="flex items-center gap-1 font-light">
-                          <CheckCircle className="w-4 h-4" />
-                          {course.completedLessons}/{course.totalLessons} lessons
-                        </span>
-                        <span className="font-light">• {course.totalHours} hours</span>
-                        <span className="font-light">• Last: {course.lastAccessed}</span>
+          <TabsContent value="tools" className="space-y-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {/* Business Validator Featured Card */}
+              <div className="md:col-span-2 lg:col-span-2">
+                <BusinessValidator />
+              </div>
+
+              {/* Other Tools Placeholder */}
+              <div className="space-y-6">
+                <motion.div
+                  initial={{ opacity: 0, x: 20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  className="p-6 rounded-xl border border-border/50 bg-card/30 backdrop-blur-sm"
+                >
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 rounded-lg bg-silver/10 flex items-center justify-center border border-silver/20">
+                      <Calculator className="w-5 h-5 text-silver" />
+                    </div>
+                    <h3 className="text-xl font-sans text-gradient-silver font-semibold">Quick Validate</h3>
+                  </div>
+                  <p className="text-sm text-muted-foreground font-light mb-4">
+                    Nhập nhanh các chỉ số cơ bản để đánh giá sơ bộ ý tưởng của bạn trong 60 giây.
+                  </p>
+                  <button className="text-sm text-silver hover:underline font-light">
+                    Coming Soon...
+                  </button>
+                </motion.div>
+
+                <motion.div
+                  initial={{ opacity: 0, x: 20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.1 }}
+                  className="p-6 rounded-xl border border-border/50 bg-card/30 backdrop-blur-sm"
+                >
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 rounded-lg bg-silver/10 flex items-center justify-center border border-silver/20">
+                      <FileCheck className="w-5 h-5 text-silver" />
+                    </div>
+                    <h3 className="text-xl font-sans text-gradient-silver font-semibold">Checklist Khởi Nghiệp</h3>
+                  </div>
+                  <p className="text-sm text-muted-foreground font-light mb-4">
+                    80+ đầu mục cần chuẩn bị trước khi chính thức vận hành mô hình của bạn.
+                  </p>
+                  <button className="text-sm text-silver hover:underline font-light">
+                    Explore Checklist
+                  </button>
+                </motion.div>
+              </div>
+            </div>
+          </TabsContent>
+
+          <TabsContent value="courses" className="space-y-6">
+            {/* Courses Grid */}
+            <div className="space-y-6">
+              {courses.map((course, index) => (
+                <motion.div
+                  key={course.id}
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.2 + index * 0.1 }}
+                  className="p-6 rounded-xl border border-border/50 bg-card/50 backdrop-blur-sm hover:border-silver/30 transition-all duration-300"
+                >
+                  <div className="flex flex-col md:flex-row gap-6">
+                    {/* Course Progress Indicator */}
+                    <div className="flex-shrink-0">
+                      <div className="w-24 h-24 rounded-xl border-2 border-silver/30 flex items-center justify-center bg-background relative">
+                        <svg className="w-20 h-20 -rotate-90">
+                          <circle
+                            cx="40"
+                            cy="40"
+                            r="35"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="4"
+                            className="text-border/30"
+                          />
+                          <motion.circle
+                            cx="40"
+                            cy="40"
+                            r="35"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="4"
+                            className="text-silver"
+                            strokeLinecap="round"
+                            initial={{ pathLength: 0 }}
+                            animate={{ pathLength: course.progress / 100 }}
+                            transition={{ duration: 1.5, delay: 0.5 + index * 0.2 }}
+                            strokeDasharray={220}
+                            strokeDashoffset={220}
+                          />
+                        </svg>
+                        <span className="absolute text-xl font-sans text-silver">{course.progress}%</span>
+                      </div>
+                    </div>
+
+                    {/* Course Details */}
+                    <div className="flex-1 space-y-4">
+                      <div className="flex items-start justify-between">
+                        <div className="flex-1">
+                          <h3 className="text-2xl font-sans text-gradient-silver font-semibold mb-1">
+                            {course.title}
+                          </h3>
+                          <div className="flex items-center gap-4 text-sm text-muted-foreground">
+                            <span className="flex items-center gap-1 font-light">
+                              <CheckCircle className="w-4 h-4" />
+                              {course.completedLessons}/{course.totalLessons} lessons
+                            </span>
+                            <span className="font-light">• {course.totalHours} hours</span>
+                            <span className="font-light">• Last: {course.lastAccessed}</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Progress Bar */}
+                      <div>
+                        <div className="w-full h-3 bg-background rounded-full overflow-hidden">
+                          <motion.div
+                            initial={{ width: 0 }}
+                            animate={{ width: `${course.progress}%` }}
+                            transition={{ duration: 1.5, delay: 0.5 + index * 0.2 }}
+                            className="h-full bg-gradient-to-r from-silver/50 to-silver rounded-full"
+                          />
+                        </div>
+                      </div>
+
+                      {/* Action Buttons */}
+                      <div className="flex items-center gap-3">
+                        <button className="flex items-center gap-2 px-6 py-2 rounded-lg bg-silver/10 border border-silver/30 text-silver hover:bg-silver/20 transition-colors font-light">
+                          <PlayCircle className="w-4 h-4" />
+                          Continue Learning
+                        </button>
+                        <button className="px-6 py-2 rounded-lg border border-border/50 text-foreground hover:border-silver/50 transition-colors font-light">
+                          View Syllabus
+                        </button>
                       </div>
                     </div>
                   </div>
-
-                  {/* Progress Bar */}
-                  <div>
-                    <div className="w-full h-3 bg-background rounded-full overflow-hidden">
-                      <motion.div
-                        initial={{ width: 0 }}
-                        animate={{ width: `${course.progress}%` }}
-                        transition={{ duration: 1.5, delay: 0.5 + index * 0.2 }}
-                        className="h-full bg-gradient-to-r from-silver/50 to-silver rounded-full"
-                      />
-                    </div>
-                  </div>
-
-                  {/* Action Buttons */}
-                  <div className="flex items-center gap-3">
-                    <button className="flex items-center gap-2 px-6 py-2 rounded-lg bg-silver/10 border border-silver/30 text-silver hover:bg-silver/20 transition-colors font-light">
-                      <PlayCircle className="w-4 h-4" />
-                      Continue Learning
-                    </button>
-                    <button className="px-6 py-2 rounded-lg border border-border/50 text-foreground hover:border-silver/50 transition-colors font-light">
-                      View Syllabus
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </motion.div>
+                </motion.div>
+              ))}
+            </div>
+          </TabsContent>
+        </Tabs>
       </div>
     </div>
   )
