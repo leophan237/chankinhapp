@@ -5,18 +5,18 @@ import { motion } from 'framer-motion'
 const painPoints = [
   {
     number: '01.',
-    title: 'Sản phẩm ngon ≠ Thành công',
-    description: 'Vì sao hàng ngàn quán "đồ ngon" vẫn đóng cửa sau 6 tháng? Bạn đang thiếu một hệ thống vận hành và tài chính.',
+    title: 'Bẫy "Sản Phẩm Ngon"',
+    description: 'Bạn là một đầu bếp tài ba, một barista xuất sắc, nhưng lại là một CEO tồi của chính quán mình? Quán đông khách nhưng cuối tháng cộng sổ lại không thấy tiền mặt đâu?',
   },
   {
     number: '02.',
-    title: 'Kinh doanh theo con đường tử tế',
-    description: 'Không tăng thu, không giảm chi, không tháo gỡ được rủi ro — phần lớn đang kinh doanh hoàn toàn bằng cảm tính.',
+    title: 'Làm Thuê Cho Chính Mình',
+    description: 'Bạn mở quán để mua sự tự do, nhưng cuối cùng lại kẹt 14 tiếng/ngày ở quán để canh chừng nhân viên, lo xử lý khủng hoảng truyền thông và liên tục bù lỗ?',
   },
   {
     number: '03.',
-    title: 'Quá nhiều vấn đề, không biết bắt đầu',
-    description: 'Marketing, tài chính, nhân sự, vận hành — mỗi thứ một ít, không có một công thức nào đủ rõ ràng để làm chuẩn.',
+    title: 'Bơi Trong Mớ Bòng Bong',
+    description: 'Marketing, Vận hành (SOP), Dòng tiền (P&L)... bạn đang làm tất cả bằng bản năng và mong chờ sự may mắn thay vì sở hữu một công thức chiến thắng?',
   },
 ]
 

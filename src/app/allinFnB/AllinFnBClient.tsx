@@ -6,6 +6,9 @@ import HeroSection from './sections/HeroSection'
 import PainPointsSection from './sections/PainPointsSection'
 import PillarsSection from './sections/PillarsSection'
 import JourneySection from './sections/JourneySection'
+import TargetAudienceSection from './sections/TargetAudienceSection'
+import SocialProofSection from './sections/SocialProofSection'
+import ProgramDetailSection from './sections/ProgramDetailSection'
 import ValueStackSection from './sections/ValueStackSection'
 import TrainerSection from './sections/TrainerSection'
 import PricingSection from './sections/PricingSection'
@@ -42,9 +45,12 @@ export default function AllinFnBClient() {
       <div className="relative z-10">
         <HeroSection />
         <PainPointsSection />
+        <TargetAudienceSection />
         <PillarsSection />
         <JourneySection />
+        <ProgramDetailSection />
         <ValueStackSection />
+        <SocialProofSection />
         <TrainerSection />
         <PricingSection />
         <CTASection />
@@ -54,7 +60,7 @@ export default function AllinFnBClient() {
           <div className="max-w-4xl mx-auto px-4 space-y-4">
             <img src="/logo-chankinh-white-03.png" alt="Chân Kinh Online" className="w-12 h-12 mx-auto opacity-40" />
             <p className="text-xs text-muted-foreground/40 tracking-widest uppercase">
-              XCAP — Trạm Khởi Nghiệp × Chân Kinh Online
+              Chương trình được tài trợ bởi <a href="https://foodify.vn" target="_blank" rel="noopener noreferrer">Foodify</a> × <a href="https://chankinhonline.com" target="_blank" rel="noopener noreferrer">Chân Kinh Online</a>
             </p>
             <p className="text-[10px] text-muted-foreground/30">
               © 2025 XCAP. All rights reserved.

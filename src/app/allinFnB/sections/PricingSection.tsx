@@ -78,7 +78,7 @@ export default function PricingSection() {
         </motion.div>
 
         {/* Pricing Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
           {packages.map((pkg, idx) => (
             <motion.div
               key={idx}
@@ -151,6 +151,28 @@ export default function PricingSection() {
             </motion.div>
           ))}
         </div>
+
+        {/* Justification & Guarantee */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="max-w-2xl mx-auto text-center space-y-8 mt-12"
+        >
+          <p className="text-[15px] text-silver/70 font-light leading-relaxed italic border-l-2 border-white/20 pl-4 text-left">
+            "Khóa huấn luyện này không phải chi phí. Nó là một khoản Đầu tư tương đương nửa tháng lương của một COO (Giám đốc Vận hành), nhưng mang lại hệ thống giúp bạn tiết kiệm hàng trăm triệu đồng tiền học phí rủi ro trên thương trường."
+          </p>
+          <div className="inline-flex flex-col sm:flex-row items-center gap-3 px-6 py-4 rounded-2xl border border-emerald-500/20 bg-emerald-500/5">
+            <div className="w-10 h-10 shrink-0 rounded-full bg-emerald-500/10 flex items-center justify-center">
+              <Check className="w-5 h-5 text-emerald-400" />
+            </div>
+            <span className="text-sm text-emerald-100/90 font-medium text-left">
+              <strong className="text-emerald-400 block mb-1">Cam kết rủi ro bằng 0</strong>
+              Hoàn tiền 100% nếu bạn thấy kiến thức không thể áp dụng vào thực tế sau buổi học đầu tiên.
+            </span>
+          </div>
+        </motion.div>
       </div>
     </section>
   )

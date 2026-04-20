@@ -30,7 +30,7 @@ export default function TrainerSection() {
           <div className="aspect-[3/4] md:aspect-square lg:aspect-[4/5] rounded-xl overflow-hidden border border-white/10 bg-black relative shadow-2xl">
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent z-10" />
             <img 
-              src="/images/trainer_portrait.png" 
+              src="/images/trainer_portrait.jpg" 
               alt="Portrait of Founder" 
               className="w-full h-full object-cover grayscale opacity-90 mix-blend-luminosity"
             />
@@ -58,10 +58,21 @@ export default function TrainerSection() {
           </h2>
           <div className="h-px w-16 bg-white/20 mb-6" />
           
-          <p className="text-base text-silver/60 font-light leading-relaxed mb-12">
+          <p className="text-base text-silver/60 font-light leading-relaxed mb-8">
             Với kinh nghiệm sâu rộng trong việc thiết lập khái niệm, vận hành hệ thống và cấu trúc tài chính cho đa dạng các mô hình F&B. 
             Từng giữ các vai trò trọng yếu từ quản lý vận hành, phát triển kinh doanh đến quan hệ nhà đầu tư.
           </p>
+
+          <div className="mb-12 space-y-4 p-5 rounded-xl border border-white/10 bg-white/[0.02]">
+            <div className="flex items-start gap-3">
+              <span className="text-emerald-400/80 mt-0.5 text-lg leading-none">✦</span>
+              <p className="text-sm text-white/90 font-medium leading-relaxed">Tư vấn mở rộng chuỗi cafe từ số 0 đến 7 cửa hàng.</p>
+            </div>
+            <div className="flex items-start gap-3">
+              <span className="text-emerald-400/80 mt-0.5 text-lg leading-none">✦</span>
+              <p className="text-sm text-white/90 font-medium leading-relaxed">Quản lý danh mục đầu tư các dự án bán lẻ và F&B quy mô hơn 150 tỷ đồng.</p>
+            </div>
+          </div>
 
           {/* Roles List */}
           <div className="space-y-4">

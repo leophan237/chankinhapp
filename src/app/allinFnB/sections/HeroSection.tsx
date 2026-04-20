@@ -38,11 +38,13 @@ export default function HeroSection() {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.2, delay: 0.6, ease: [0.25, 0.4, 0.25, 1] }}
-        className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-sans font-black tracking-tight leading-[1.1] mb-6 max-w-4xl"
+        className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-sans font-black tracking-tight leading-[1.1] mb-6 max-w-4xl mx-auto"
       >
-        <span className="text-white">ALL-IN</span>
+        <span className="text-white">ALL-IN F&B:</span>
         <br />
-        <span className="text-silver/80">F&B</span>
+        <span className="text-silver/80 text-3xl sm:text-4xl md:text-5xl lg:text-6xl mt-4 block">
+          CON ĐƯỜNG TẤT TAY XÂY QUÁN CHẤT
+        </span>
       </motion.h1>
 
       {/* Subtitle */}
@@ -50,16 +52,16 @@ export default function HeroSection() {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 1 }}
-        className="text-lg md:text-xl text-silver/60 font-light tracking-wide mb-4 max-w-2xl"
+        className="text-lg md:text-xl text-silver/60 font-light tracking-wide mb-4 max-w-3xl mx-auto leading-relaxed"
       >
-        Khóa Huấn Luyện Toàn Diện Cho Founder Ngành F&B
+        Khóa huấn luyện 18 giờ thực chiến giúp Founder F&B thoát khỏi sự hỗn loạn của việc vận hành cảm tính, thiết lập hệ thống tự chạy và sẵn sàng cho vòng gọi vốn tiếp theo.
       </motion.p>
 
       <motion.p
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 1.4 }}
-        className="text-sm md:text-base text-muted-foreground/60 font-light max-w-xl mb-10 leading-relaxed"
+        className="text-sm md:text-base text-muted-foreground/60 font-light max-w-xl mx-auto mb-10 leading-relaxed"
       >
         Nắm vững <strong className="text-white font-medium">4 trụ cột</strong> kinh doanh — 
         từ Ideation đến Scaling Up — trong{' '}
@@ -71,13 +73,13 @@ export default function HeroSection() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 1.8 }}
-        className="flex flex-col sm:flex-row gap-4 items-center mb-8"
+        className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8"
       >
         <a
           href="#pricing"
           className="group px-8 py-4 bg-white text-black font-semibold rounded-xl hover:bg-silver transition-all duration-300 flex items-center gap-2 text-sm tracking-wide"
         >
-          ĐĂNG KÝ NGAY
+          GIỮ SUẤT EARLY BIRD CỦA TÔI
           <span className="group-hover:translate-x-1 transition-transform">→</span>
         </a>
         <a
