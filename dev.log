@@ -2836,3 +2836,163 @@ prisma:query UPDATE `main`.`AllinFnbSlot` SET `status` = ?, `reservedUntil` = ?,
 prisma:query COMMIT
 prisma:query SELECT `main`.`AllinFnbSlot`.`slotNumber`, `main`.`AllinFnbSlot`.`price`, `main`.`AllinFnbSlot`.`status`, `main`.`AllinFnbSlot`.`reservedUntil` FROM `main`.`AllinFnbSlot` WHERE 1=1 ORDER BY `main`.`AllinFnbSlot`.`slotNumber` ASC LIMIT ? OFFSET ?
  GET /api/allin-fnb/slots 200 in 36ms (compile: 5ms, proxy.ts: 19ms, render: 12ms)
+ GET /allinFnB 200 in 206ms (compile: 111ms, proxy.ts: 41ms, render: 54ms)
+prisma:query SELECT 1
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`AllinFnbSlot`.`slotNumber` FROM `main`.`AllinFnbSlot` WHERE 1=1 LIMIT ? OFFSET ?) AS `sub`
+prisma:query BEGIN IMMEDIATE
+prisma:query SELECT `main`.`AllinFnbSlot`.`slotNumber`, `main`.`AllinFnbSlot`.`currentRegistrationId` FROM `main`.`AllinFnbSlot` WHERE (`main`.`AllinFnbSlot`.`status` = ? AND `main`.`AllinFnbSlot`.`reservedUntil` <= ?) LIMIT ? OFFSET ?
+prisma:query UPDATE `main`.`AllinFnbSlot` SET `status` = ?, `reservedUntil` = ?, `currentRegistrationId` = ?, `updatedAt` = ? WHERE (`main`.`AllinFnbSlot`.`status` = ? AND `main`.`AllinFnbSlot`.`reservedUntil` <= ?)
+prisma:query COMMIT
+ GET /api/allin-fnb/slots 200 in 1112ms (compile: 1057ms, proxy.ts: 43ms, render: 13ms)
+prisma:query SELECT `main`.`AllinFnbSlot`.`slotNumber`, `main`.`AllinFnbSlot`.`price`, `main`.`AllinFnbSlot`.`status`, `main`.`AllinFnbSlot`.`reservedUntil` FROM `main`.`AllinFnbSlot` WHERE 1=1 ORDER BY `main`.`AllinFnbSlot`.`slotNumber` ASC LIMIT ? OFFSET ?
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`AllinFnbSlot`.`slotNumber` FROM `main`.`AllinFnbSlot` WHERE 1=1 LIMIT ? OFFSET ?) AS `sub`
+prisma:query BEGIN IMMEDIATE
+prisma:query SELECT `main`.`AllinFnbSlot`.`slotNumber`, `main`.`AllinFnbSlot`.`currentRegistrationId` FROM `main`.`AllinFnbSlot` WHERE (`main`.`AllinFnbSlot`.`status` = ? AND `main`.`AllinFnbSlot`.`reservedUntil` <= ?) LIMIT ? OFFSET ?
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`AllinFnbSlot`.`slotNumber` FROM `main`.`AllinFnbSlot` WHERE 1=1 LIMIT ? OFFSET ?) AS `sub`
+prisma:query UPDATE `main`.`AllinFnbSlot` SET `status` = ?, `reservedUntil` = ?, `currentRegistrationId` = ?, `updatedAt` = ? WHERE (`main`.`AllinFnbSlot`.`status` = ? AND `main`.`AllinFnbSlot`.`reservedUntil` <= ?)
+prisma:query COMMIT
+prisma:query SELECT `main`.`AllinFnbSlot`.`slotNumber`, `main`.`AllinFnbSlot`.`price`, `main`.`AllinFnbSlot`.`status`, `main`.`AllinFnbSlot`.`reservedUntil` FROM `main`.`AllinFnbSlot` WHERE 1=1 ORDER BY `main`.`AllinFnbSlot`.`slotNumber` ASC LIMIT ? OFFSET ?
+ GET /api/allin-fnb/slots 200 in 137ms (compile: 3ms, proxy.ts: 77ms, render: 56ms)
+prisma:query BEGIN IMMEDIATE
+prisma:query SELECT `main`.`AllinFnbSlot`.`slotNumber`, `main`.`AllinFnbSlot`.`currentRegistrationId` FROM `main`.`AllinFnbSlot` WHERE (`main`.`AllinFnbSlot`.`status` = ? AND `main`.`AllinFnbSlot`.`reservedUntil` <= ?) LIMIT ? OFFSET ?
+ GET /allinFnB 200 in 138ms (compile: 30ms, proxy.ts: 78ms, render: 30ms)
+prisma:query UPDATE `main`.`AllinFnbSlot` SET `status` = ?, `reservedUntil` = ?, `currentRegistrationId` = ?, `updatedAt` = ? WHERE (`main`.`AllinFnbSlot`.`status` = ? AND `main`.`AllinFnbSlot`.`reservedUntil` <= ?)
+prisma:query COMMIT
+prisma:query SELECT `main`.`AllinFnbSlot`.`slotNumber`, `main`.`AllinFnbSlot`.`price`, `main`.`AllinFnbSlot`.`status`, `main`.`AllinFnbSlot`.`reservedUntil` FROM `main`.`AllinFnbSlot` WHERE 1=1 ORDER BY `main`.`AllinFnbSlot`.`slotNumber` ASC LIMIT ? OFFSET ?
+ GET /api/allin-fnb/slots 200 in 139ms (compile: 1695µs, proxy.ts: 78ms, render: 59ms)
+ GET /allinFnB 200 in 220ms (compile: 18ms, proxy.ts: 15ms, render: 186ms)
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`AllinFnbSlot`.`slotNumber` FROM `main`.`AllinFnbSlot` WHERE 1=1 LIMIT ? OFFSET ?) AS `sub`
+prisma:query BEGIN IMMEDIATE
+prisma:query SELECT `main`.`AllinFnbSlot`.`slotNumber`, `main`.`AllinFnbSlot`.`currentRegistrationId` FROM `main`.`AllinFnbSlot` WHERE (`main`.`AllinFnbSlot`.`status` = ? AND `main`.`AllinFnbSlot`.`reservedUntil` <= ?) LIMIT ? OFFSET ?
+prisma:query UPDATE `main`.`AllinFnbSlot` SET `status` = ?, `reservedUntil` = ?, `currentRegistrationId` = ?, `updatedAt` = ? WHERE (`main`.`AllinFnbSlot`.`status` = ? AND `main`.`AllinFnbSlot`.`reservedUntil` <= ?)
+prisma:query COMMIT
+ GET /api/allin-fnb/slots 200 in 28ms (compile: 1715µs, proxy.ts: 7ms, render: 20ms)
+prisma:query SELECT `main`.`AllinFnbSlot`.`slotNumber`, `main`.`AllinFnbSlot`.`price`, `main`.`AllinFnbSlot`.`status`, `main`.`AllinFnbSlot`.`reservedUntil` FROM `main`.`AllinFnbSlot` WHERE 1=1 ORDER BY `main`.`AllinFnbSlot`.`slotNumber` ASC LIMIT ? OFFSET ?
+ POST /allinFnB 200 in 41ms (compile: 19ms, proxy.ts: 14ms, render: 8ms)
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`AllinFnbSlot`.`slotNumber` FROM `main`.`AllinFnbSlot` WHERE 1=1 LIMIT ? OFFSET ?) AS `sub`
+prisma:query BEGIN IMMEDIATE
+prisma:query SELECT `main`.`AllinFnbSlot`.`slotNumber`, `main`.`AllinFnbSlot`.`currentRegistrationId` FROM `main`.`AllinFnbSlot` WHERE (`main`.`AllinFnbSlot`.`status` = ? AND `main`.`AllinFnbSlot`.`reservedUntil` <= ?) LIMIT ? OFFSET ?
+prisma:query UPDATE `main`.`AllinFnbSlot` SET `status` = ?, `reservedUntil` = ?, `currentRegistrationId` = ?, `updatedAt` = ? WHERE (`main`.`AllinFnbSlot`.`status` = ? AND `main`.`AllinFnbSlot`.`reservedUntil` <= ?)
+prisma:query COMMIT
+prisma:query SELECT `main`.`AllinFnbSlot`.`slotNumber`, `main`.`AllinFnbSlot`.`price`, `main`.`AllinFnbSlot`.`status`, `main`.`AllinFnbSlot`.`reservedUntil` FROM `main`.`AllinFnbSlot` WHERE 1=1 ORDER BY `main`.`AllinFnbSlot`.`slotNumber` ASC LIMIT ? OFFSET ?
+ GET /api/allin-fnb/slots 200 in 21ms (compile: 2ms, proxy.ts: 12ms, render: 7ms)
+prisma:query SELECT 1
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`AllinFnbSlot`.`slotNumber` FROM `main`.`AllinFnbSlot` WHERE 1=1 LIMIT ? OFFSET ?) AS `sub`
+prisma:query BEGIN IMMEDIATE
+prisma:query SELECT `main`.`AllinFnbSlot`.`slotNumber`, `main`.`AllinFnbSlot`.`currentRegistrationId` FROM `main`.`AllinFnbSlot` WHERE (`main`.`AllinFnbSlot`.`status` = ? AND `main`.`AllinFnbSlot`.`reservedUntil` <= ?) LIMIT ? OFFSET ?
+prisma:query UPDATE `main`.`AllinFnbSlot` SET `status` = ?, `reservedUntil` = ?, `currentRegistrationId` = ?, `updatedAt` = ? WHERE (`main`.`AllinFnbSlot`.`status` = ? AND `main`.`AllinFnbSlot`.`reservedUntil` <= ?)
+prisma:query COMMIT
+prisma:query SELECT `main`.`AllinFnbSlot`.`slotNumber`, `main`.`AllinFnbSlot`.`price`, `main`.`AllinFnbSlot`.`status`, `main`.`AllinFnbSlot`.`reservedUntil` FROM `main`.`AllinFnbSlot` WHERE 1=1 ORDER BY `main`.`AllinFnbSlot`.`slotNumber` ASC LIMIT ? OFFSET ?
+ GET /api/allin-fnb/slots 200 in 31ms (compile: 6ms, proxy.ts: 16ms, render: 9ms)
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`AllinFnbSlot`.`slotNumber` FROM `main`.`AllinFnbSlot` WHERE 1=1 LIMIT ? OFFSET ?) AS `sub`
+prisma:query BEGIN IMMEDIATE
+prisma:query SELECT `main`.`AllinFnbSlot`.`slotNumber`, `main`.`AllinFnbSlot`.`currentRegistrationId` FROM `main`.`AllinFnbSlot` WHERE (`main`.`AllinFnbSlot`.`status` = ? AND `main`.`AllinFnbSlot`.`reservedUntil` <= ?) LIMIT ? OFFSET ?
+prisma:query UPDATE `main`.`AllinFnbSlot` SET `status` = ?, `reservedUntil` = ?, `currentRegistrationId` = ?, `updatedAt` = ? WHERE (`main`.`AllinFnbSlot`.`status` = ? AND `main`.`AllinFnbSlot`.`reservedUntil` <= ?)
+prisma:query COMMIT
+prisma:query SELECT `main`.`AllinFnbSlot`.`slotNumber`, `main`.`AllinFnbSlot`.`price`, `main`.`AllinFnbSlot`.`status`, `main`.`AllinFnbSlot`.`reservedUntil` FROM `main`.`AllinFnbSlot` WHERE 1=1 ORDER BY `main`.`AllinFnbSlot`.`slotNumber` ASC LIMIT ? OFFSET ?
+ GET /api/allin-fnb/slots 200 in 30ms (compile: 6ms, proxy.ts: 13ms, render: 11ms)
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`AllinFnbSlot`.`slotNumber` FROM `main`.`AllinFnbSlot` WHERE 1=1 LIMIT ? OFFSET ?) AS `sub`
+prisma:query BEGIN IMMEDIATE
+prisma:query SELECT `main`.`AllinFnbSlot`.`slotNumber`, `main`.`AllinFnbSlot`.`currentRegistrationId` FROM `main`.`AllinFnbSlot` WHERE (`main`.`AllinFnbSlot`.`status` = ? AND `main`.`AllinFnbSlot`.`reservedUntil` <= ?) LIMIT ? OFFSET ?
+prisma:query UPDATE `main`.`AllinFnbSlot` SET `status` = ?, `reservedUntil` = ?, `currentRegistrationId` = ?, `updatedAt` = ? WHERE (`main`.`AllinFnbSlot`.`status` = ? AND `main`.`AllinFnbSlot`.`reservedUntil` <= ?)
+prisma:query COMMIT
+prisma:query SELECT `main`.`AllinFnbSlot`.`slotNumber`, `main`.`AllinFnbSlot`.`price`, `main`.`AllinFnbSlot`.`status`, `main`.`AllinFnbSlot`.`reservedUntil` FROM `main`.`AllinFnbSlot` WHERE 1=1 ORDER BY `main`.`AllinFnbSlot`.`slotNumber` ASC LIMIT ? OFFSET ?
+ GET /api/allin-fnb/slots 200 in 17ms (compile: 2ms, proxy.ts: 7ms, render: 8ms)
+prisma:query SELECT 1
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`AllinFnbSlot`.`slotNumber` FROM `main`.`AllinFnbSlot` WHERE 1=1 LIMIT ? OFFSET ?) AS `sub`
+prisma:query BEGIN IMMEDIATE
+prisma:query SELECT `main`.`AllinFnbSlot`.`slotNumber`, `main`.`AllinFnbSlot`.`currentRegistrationId` FROM `main`.`AllinFnbSlot` WHERE (`main`.`AllinFnbSlot`.`status` = ? AND `main`.`AllinFnbSlot`.`reservedUntil` <= ?) LIMIT ? OFFSET ?
+prisma:query UPDATE `main`.`AllinFnbSlot` SET `status` = ?, `reservedUntil` = ?, `currentRegistrationId` = ?, `updatedAt` = ? WHERE (`main`.`AllinFnbSlot`.`status` = ? AND `main`.`AllinFnbSlot`.`reservedUntil` <= ?)
+prisma:query COMMIT
+ GET /api/allin-fnb/slots 200 in 36ms (compile: 5ms, proxy.ts: 23ms, render: 9ms)
+prisma:query SELECT `main`.`AllinFnbSlot`.`slotNumber`, `main`.`AllinFnbSlot`.`price`, `main`.`AllinFnbSlot`.`status`, `main`.`AllinFnbSlot`.`reservedUntil` FROM `main`.`AllinFnbSlot` WHERE 1=1 ORDER BY `main`.`AllinFnbSlot`.`slotNumber` ASC LIMIT ? OFFSET ?
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`AllinFnbSlot`.`slotNumber` FROM `main`.`AllinFnbSlot` WHERE 1=1 LIMIT ? OFFSET ?) AS `sub`
+prisma:query BEGIN IMMEDIATE
+prisma:query SELECT `main`.`AllinFnbSlot`.`slotNumber`, `main`.`AllinFnbSlot`.`currentRegistrationId` FROM `main`.`AllinFnbSlot` WHERE (`main`.`AllinFnbSlot`.`status` = ? AND `main`.`AllinFnbSlot`.`reservedUntil` <= ?) LIMIT ? OFFSET ?
+prisma:query UPDATE `main`.`AllinFnbSlot` SET `status` = ?, `reservedUntil` = ?, `currentRegistrationId` = ?, `updatedAt` = ? WHERE (`main`.`AllinFnbSlot`.`status` = ? AND `main`.`AllinFnbSlot`.`reservedUntil` <= ?)
+prisma:query COMMIT
+prisma:query SELECT `main`.`AllinFnbSlot`.`slotNumber`, `main`.`AllinFnbSlot`.`price`, `main`.`AllinFnbSlot`.`status`, `main`.`AllinFnbSlot`.`reservedUntil` FROM `main`.`AllinFnbSlot` WHERE 1=1 ORDER BY `main`.`AllinFnbSlot`.`slotNumber` ASC LIMIT ? OFFSET ?
+ GET /api/allin-fnb/slots 200 in 29ms (compile: 5ms, proxy.ts: 16ms, render: 9ms)
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`AllinFnbSlot`.`slotNumber` FROM `main`.`AllinFnbSlot` WHERE 1=1 LIMIT ? OFFSET ?) AS `sub`
+prisma:query BEGIN IMMEDIATE
+prisma:query SELECT `main`.`AllinFnbSlot`.`slotNumber`, `main`.`AllinFnbSlot`.`currentRegistrationId` FROM `main`.`AllinFnbSlot` WHERE (`main`.`AllinFnbSlot`.`status` = ? AND `main`.`AllinFnbSlot`.`reservedUntil` <= ?) LIMIT ? OFFSET ?
+prisma:query UPDATE `main`.`AllinFnbSlot` SET `status` = ?, `reservedUntil` = ?, `currentRegistrationId` = ?, `updatedAt` = ? WHERE (`main`.`AllinFnbSlot`.`status` = ? AND `main`.`AllinFnbSlot`.`reservedUntil` <= ?)
+prisma:query COMMIT
+prisma:query SELECT `main`.`AllinFnbSlot`.`slotNumber`, `main`.`AllinFnbSlot`.`price`, `main`.`AllinFnbSlot`.`status`, `main`.`AllinFnbSlot`.`reservedUntil` FROM `main`.`AllinFnbSlot` WHERE 1=1 ORDER BY `main`.`AllinFnbSlot`.`slotNumber` ASC LIMIT ? OFFSET ?
+ GET /api/allin-fnb/slots 200 in 27ms (compile: 3ms, proxy.ts: 16ms, render: 9ms)
+prisma:query SELECT 1
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`AllinFnbSlot`.`slotNumber` FROM `main`.`AllinFnbSlot` WHERE 1=1 LIMIT ? OFFSET ?) AS `sub`
+prisma:query BEGIN IMMEDIATE
+prisma:query SELECT `main`.`AllinFnbSlot`.`slotNumber`, `main`.`AllinFnbSlot`.`currentRegistrationId` FROM `main`.`AllinFnbSlot` WHERE (`main`.`AllinFnbSlot`.`status` = ? AND `main`.`AllinFnbSlot`.`reservedUntil` <= ?) LIMIT ? OFFSET ?
+prisma:query UPDATE `main`.`AllinFnbSlot` SET `status` = ?, `reservedUntil` = ?, `currentRegistrationId` = ?, `updatedAt` = ? WHERE (`main`.`AllinFnbSlot`.`status` = ? AND `main`.`AllinFnbSlot`.`reservedUntil` <= ?)
+prisma:query COMMIT
+prisma:query SELECT `main`.`AllinFnbSlot`.`slotNumber`, `main`.`AllinFnbSlot`.`price`, `main`.`AllinFnbSlot`.`status`, `main`.`AllinFnbSlot`.`reservedUntil` FROM `main`.`AllinFnbSlot` WHERE 1=1 ORDER BY `main`.`AllinFnbSlot`.`slotNumber` ASC LIMIT ? OFFSET ?
+ GET /api/allin-fnb/slots 200 in 15ms (compile: 4ms, proxy.ts: 6ms, render: 6ms)
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`AllinFnbSlot`.`slotNumber` FROM `main`.`AllinFnbSlot` WHERE 1=1 LIMIT ? OFFSET ?) AS `sub`
+prisma:query BEGIN IMMEDIATE
+prisma:query SELECT `main`.`AllinFnbSlot`.`slotNumber`, `main`.`AllinFnbSlot`.`currentRegistrationId` FROM `main`.`AllinFnbSlot` WHERE (`main`.`AllinFnbSlot`.`status` = ? AND `main`.`AllinFnbSlot`.`reservedUntil` <= ?) LIMIT ? OFFSET ?
+prisma:query UPDATE `main`.`AllinFnbSlot` SET `status` = ?, `reservedUntil` = ?, `currentRegistrationId` = ?, `updatedAt` = ? WHERE (`main`.`AllinFnbSlot`.`status` = ? AND `main`.`AllinFnbSlot`.`reservedUntil` <= ?)
+prisma:query COMMIT
+prisma:query SELECT `main`.`AllinFnbSlot`.`slotNumber`, `main`.`AllinFnbSlot`.`price`, `main`.`AllinFnbSlot`.`status`, `main`.`AllinFnbSlot`.`reservedUntil` FROM `main`.`AllinFnbSlot` WHERE 1=1 ORDER BY `main`.`AllinFnbSlot`.`slotNumber` ASC LIMIT ? OFFSET ?
+ GET /api/allin-fnb/slots 200 in 32ms (compile: 6ms, proxy.ts: 13ms, render: 12ms)
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`AllinFnbSlot`.`slotNumber` FROM `main`.`AllinFnbSlot` WHERE 1=1 LIMIT ? OFFSET ?) AS `sub`
+prisma:query BEGIN IMMEDIATE
+prisma:query SELECT `main`.`AllinFnbSlot`.`slotNumber`, `main`.`AllinFnbSlot`.`currentRegistrationId` FROM `main`.`AllinFnbSlot` WHERE (`main`.`AllinFnbSlot`.`status` = ? AND `main`.`AllinFnbSlot`.`reservedUntil` <= ?) LIMIT ? OFFSET ?
+prisma:query UPDATE `main`.`AllinFnbSlot` SET `status` = ?, `reservedUntil` = ?, `currentRegistrationId` = ?, `updatedAt` = ? WHERE (`main`.`AllinFnbSlot`.`status` = ? AND `main`.`AllinFnbSlot`.`reservedUntil` <= ?)
+prisma:query COMMIT
+prisma:query SELECT `main`.`AllinFnbSlot`.`slotNumber`, `main`.`AllinFnbSlot`.`price`, `main`.`AllinFnbSlot`.`status`, `main`.`AllinFnbSlot`.`reservedUntil` FROM `main`.`AllinFnbSlot` WHERE 1=1 ORDER BY `main`.`AllinFnbSlot`.`slotNumber` ASC LIMIT ? OFFSET ?
+ GET /api/allin-fnb/slots 200 in 12ms (compile: 1347µs, proxy.ts: 5ms, render: 5ms)
+prisma:query SELECT 1
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`AllinFnbSlot`.`slotNumber` FROM `main`.`AllinFnbSlot` WHERE 1=1 LIMIT ? OFFSET ?) AS `sub`
+prisma:query BEGIN IMMEDIATE
+prisma:query SELECT `main`.`AllinFnbSlot`.`slotNumber`, `main`.`AllinFnbSlot`.`currentRegistrationId` FROM `main`.`AllinFnbSlot` WHERE (`main`.`AllinFnbSlot`.`status` = ? AND `main`.`AllinFnbSlot`.`reservedUntil` <= ?) LIMIT ? OFFSET ?
+prisma:query UPDATE `main`.`AllinFnbSlot` SET `status` = ?, `reservedUntil` = ?, `currentRegistrationId` = ?, `updatedAt` = ? WHERE (`main`.`AllinFnbSlot`.`status` = ? AND `main`.`AllinFnbSlot`.`reservedUntil` <= ?)
+prisma:query COMMIT
+prisma:query SELECT `main`.`AllinFnbSlot`.`slotNumber`, `main`.`AllinFnbSlot`.`price`, `main`.`AllinFnbSlot`.`status`, `main`.`AllinFnbSlot`.`reservedUntil` FROM `main`.`AllinFnbSlot` WHERE 1=1 ORDER BY `main`.`AllinFnbSlot`.`slotNumber` ASC LIMIT ? OFFSET ?
+ GET /api/allin-fnb/slots 200 in 23ms (compile: 2ms, proxy.ts: 15ms, render: 6ms)
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`AllinFnbSlot`.`slotNumber` FROM `main`.`AllinFnbSlot` WHERE 1=1 LIMIT ? OFFSET ?) AS `sub`
+prisma:query BEGIN IMMEDIATE
+prisma:query SELECT `main`.`AllinFnbSlot`.`slotNumber`, `main`.`AllinFnbSlot`.`currentRegistrationId` FROM `main`.`AllinFnbSlot` WHERE (`main`.`AllinFnbSlot`.`status` = ? AND `main`.`AllinFnbSlot`.`reservedUntil` <= ?) LIMIT ? OFFSET ?
+prisma:query UPDATE `main`.`AllinFnbSlot` SET `status` = ?, `reservedUntil` = ?, `currentRegistrationId` = ?, `updatedAt` = ? WHERE (`main`.`AllinFnbSlot`.`status` = ? AND `main`.`AllinFnbSlot`.`reservedUntil` <= ?)
+prisma:query COMMIT
+prisma:query SELECT `main`.`AllinFnbSlot`.`slotNumber`, `main`.`AllinFnbSlot`.`price`, `main`.`AllinFnbSlot`.`status`, `main`.`AllinFnbSlot`.`reservedUntil` FROM `main`.`AllinFnbSlot` WHERE 1=1 ORDER BY `main`.`AllinFnbSlot`.`slotNumber` ASC LIMIT ? OFFSET ?
+ GET /api/allin-fnb/slots 200 in 24ms (compile: 3ms, proxy.ts: 14ms, render: 7ms)
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`AllinFnbSlot`.`slotNumber` FROM `main`.`AllinFnbSlot` WHERE 1=1 LIMIT ? OFFSET ?) AS `sub`
+prisma:query BEGIN IMMEDIATE
+prisma:query SELECT `main`.`AllinFnbSlot`.`slotNumber`, `main`.`AllinFnbSlot`.`currentRegistrationId` FROM `main`.`AllinFnbSlot` WHERE (`main`.`AllinFnbSlot`.`status` = ? AND `main`.`AllinFnbSlot`.`reservedUntil` <= ?) LIMIT ? OFFSET ?
+prisma:query UPDATE `main`.`AllinFnbSlot` SET `status` = ?, `reservedUntil` = ?, `currentRegistrationId` = ?, `updatedAt` = ? WHERE (`main`.`AllinFnbSlot`.`status` = ? AND `main`.`AllinFnbSlot`.`reservedUntil` <= ?)
+prisma:query SELECT `main`.`AllinFnbSlot`.`slotNumber`, `main`.`AllinFnbSlot`.`price`, `main`.`AllinFnbSlot`.`status`, `main`.`AllinFnbSlot`.`reservedUntil`, `main`.`AllinFnbSlot`.`currentRegistrationId`, `main`.`AllinFnbSlot`.`createdAt`, `main`.`AllinFnbSlot`.`updatedAt` FROM `main`.`AllinFnbSlot` WHERE `main`.`AllinFnbSlot`.`status` = ? ORDER BY `main`.`AllinFnbSlot`.`slotNumber` ASC LIMIT ? OFFSET ?
+prisma:query INSERT INTO `main`.`AllinFnbRegistration` (`id`, `name`, `phone`, `email`, `model`, `reason`, `slotNumber`, `price`, `status`, `paymentStatus`, `expiresAt`, `createdAt`, `updatedAt`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?) RETURNING `id` AS `id`, `name` AS `name`, `phone` AS `phone`, `email` AS `email`, `model` AS `model`, `reason` AS `reason`, `slotNumber` AS `slotNumber`, `price` AS `price`, `status` AS `status`, `paymentStatus` AS `paymentStatus`, `expiresAt` AS `expiresAt`, `confirmedAt` AS `confirmedAt`, `createdAt` AS `createdAt`, `updatedAt` AS `updatedAt`
+prisma:query UPDATE `main`.`AllinFnbSlot` SET `status` = ?, `reservedUntil` = ?, `currentRegistrationId` = ?, `updatedAt` = ? WHERE (`main`.`AllinFnbSlot`.`slotNumber` = ? AND `main`.`AllinFnbSlot`.`status` = ?)
+prisma:query COMMIT
+prisma:query SELECT `main`.`AllinFnbSlot`.`slotNumber`, `main`.`AllinFnbSlot`.`price`, `main`.`AllinFnbSlot`.`status`, `main`.`AllinFnbSlot`.`reservedUntil` FROM `main`.`AllinFnbSlot` WHERE 1=1 ORDER BY `main`.`AllinFnbSlot`.`slotNumber` ASC LIMIT ? OFFSET ?
+ POST /api/allin-fnb/slots 200 in 1541ms (compile: 1880µs, proxy.ts: 13ms, render: 1526ms)
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`AllinFnbSlot`.`slotNumber` FROM `main`.`AllinFnbSlot` WHERE 1=1 LIMIT ? OFFSET ?) AS `sub`
+prisma:query BEGIN IMMEDIATE
+prisma:query SELECT `main`.`AllinFnbSlot`.`slotNumber`, `main`.`AllinFnbSlot`.`currentRegistrationId` FROM `main`.`AllinFnbSlot` WHERE (`main`.`AllinFnbSlot`.`status` = ? AND `main`.`AllinFnbSlot`.`reservedUntil` <= ?) LIMIT ? OFFSET ?
+prisma:query UPDATE `main`.`AllinFnbSlot` SET `status` = ?, `reservedUntil` = ?, `currentRegistrationId` = ?, `updatedAt` = ? WHERE (`main`.`AllinFnbSlot`.`status` = ? AND `main`.`AllinFnbSlot`.`reservedUntil` <= ?)
+prisma:query COMMIT
+prisma:query SELECT `main`.`AllinFnbSlot`.`slotNumber`, `main`.`AllinFnbSlot`.`price`, `main`.`AllinFnbSlot`.`status`, `main`.`AllinFnbSlot`.`reservedUntil` FROM `main`.`AllinFnbSlot` WHERE 1=1 ORDER BY `main`.`AllinFnbSlot`.`slotNumber` ASC LIMIT ? OFFSET ?
+ GET /api/allin-fnb/slots 200 in 21ms (compile: 3ms, proxy.ts: 12ms, render: 6ms)
+prisma:query SELECT 1
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`AllinFnbSlot`.`slotNumber` FROM `main`.`AllinFnbSlot` WHERE 1=1 LIMIT ? OFFSET ?) AS `sub`
+prisma:query BEGIN IMMEDIATE
+prisma:query SELECT `main`.`AllinFnbSlot`.`slotNumber`, `main`.`AllinFnbSlot`.`currentRegistrationId` FROM `main`.`AllinFnbSlot` WHERE (`main`.`AllinFnbSlot`.`status` = ? AND `main`.`AllinFnbSlot`.`reservedUntil` <= ?) LIMIT ? OFFSET ?
+prisma:query UPDATE `main`.`AllinFnbSlot` SET `status` = ?, `reservedUntil` = ?, `currentRegistrationId` = ?, `updatedAt` = ? WHERE (`main`.`AllinFnbSlot`.`status` = ? AND `main`.`AllinFnbSlot`.`reservedUntil` <= ?)
+prisma:query COMMIT
+prisma:query SELECT `main`.`AllinFnbSlot`.`slotNumber`, `main`.`AllinFnbSlot`.`price`, `main`.`AllinFnbSlot`.`status`, `main`.`AllinFnbSlot`.`reservedUntil` FROM `main`.`AllinFnbSlot` WHERE 1=1 ORDER BY `main`.`AllinFnbSlot`.`slotNumber` ASC LIMIT ? OFFSET ?
+ GET /api/allin-fnb/slots 200 in 20ms (compile: 4ms, proxy.ts: 9ms, render: 7ms)
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`AllinFnbSlot`.`slotNumber` FROM `main`.`AllinFnbSlot` WHERE 1=1 LIMIT ? OFFSET ?) AS `sub`
+prisma:query BEGIN IMMEDIATE
+prisma:query SELECT `main`.`AllinFnbSlot`.`slotNumber`, `main`.`AllinFnbSlot`.`currentRegistrationId` FROM `main`.`AllinFnbSlot` WHERE (`main`.`AllinFnbSlot`.`status` = ? AND `main`.`AllinFnbSlot`.`reservedUntil` <= ?) LIMIT ? OFFSET ?
+prisma:query UPDATE `main`.`AllinFnbSlot` SET `status` = ?, `reservedUntil` = ?, `currentRegistrationId` = ?, `updatedAt` = ? WHERE (`main`.`AllinFnbSlot`.`status` = ? AND `main`.`AllinFnbSlot`.`reservedUntil` <= ?)
+prisma:query COMMIT
+prisma:query SELECT `main`.`AllinFnbSlot`.`slotNumber`, `main`.`AllinFnbSlot`.`price`, `main`.`AllinFnbSlot`.`status`, `main`.`AllinFnbSlot`.`reservedUntil` FROM `main`.`AllinFnbSlot` WHERE 1=1 ORDER BY `main`.`AllinFnbSlot`.`slotNumber` ASC LIMIT ? OFFSET ?
+ GET /api/allin-fnb/slots 200 in 25ms (compile: 5ms, proxy.ts: 13ms, render: 7ms)
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`AllinFnbSlot`.`slotNumber` FROM `main`.`AllinFnbSlot` WHERE 1=1 LIMIT ? OFFSET ?) AS `sub`
+prisma:query BEGIN IMMEDIATE
+prisma:query SELECT `main`.`AllinFnbSlot`.`slotNumber`, `main`.`AllinFnbSlot`.`currentRegistrationId` FROM `main`.`AllinFnbSlot` WHERE (`main`.`AllinFnbSlot`.`status` = ? AND `main`.`AllinFnbSlot`.`reservedUntil` <= ?) LIMIT ? OFFSET ?
+prisma:query UPDATE `main`.`AllinFnbSlot` SET `status` = ?, `reservedUntil` = ?, `currentRegistrationId` = ?, `updatedAt` = ? WHERE (`main`.`AllinFnbSlot`.`status` = ? AND `main`.`AllinFnbSlot`.`reservedUntil` <= ?)
+prisma:query COMMIT
+prisma:query SELECT `main`.`AllinFnbSlot`.`slotNumber`, `main`.`AllinFnbSlot`.`price`, `main`.`AllinFnbSlot`.`status`, `main`.`AllinFnbSlot`.`reservedUntil` FROM `main`.`AllinFnbSlot` WHERE 1=1 ORDER BY `main`.`AllinFnbSlot`.`slotNumber` ASC LIMIT ? OFFSET ?
+ GET /api/allin-fnb/slots 200 in 21ms (compile: 3ms, proxy.ts: 12ms, render: 6ms)

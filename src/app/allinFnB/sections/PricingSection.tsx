@@ -75,6 +75,7 @@ export default function PricingSection() {
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [feedback, setFeedback] = useState<string | null>(null)
+  const [reservation, setReservation] = useState<PricingResponse['reservation'] | null>(null)
 
   async function refreshPricing() {
     const response = await fetch('/api/allin-fnb/slots', { cache: 'no-store' })
@@ -95,6 +96,7 @@ export default function PricingSection() {
     event.preventDefault()
     setIsSubmitting(true)
     setFeedback(null)
+    setReservation(null)
 
     try {
       const response = await fetch('/api/allin-fnb/slots', {
@@ -111,8 +113,9 @@ export default function PricingSection() {
       }
 
       setPricing(data)
+      setReservation(data.reservation)
       setFeedback(
-        `Bạn đang giữ vị trí #${data.reservation.slotNumber} trong 10 phút. Vui lòng hoàn tất để giữ mức phí ${formatFullPrice(data.reservation.price)}. Nếu không hoàn tất, vị trí sẽ được mở lại.`
+        `Bạn đang giữ vị trí #${data.reservation.slotNumber} trong 10 phút. Vui lòng thanh toán để giữ mức phí ${formatFullPrice(data.reservation.price)}.`
       )
       setFormData({ name: '', phone: '', email: '', model: '', reason: '' })
     } finally {
@@ -310,10 +313,30 @@ export default function PricingSection() {
                 Cảnh báo: 12 người khác đang xem trang này lúc này. Nếu bạn thoát ra, suất giá rẻ hiện tại có thể không còn.
               </p>
 
-              {feedback && (
+              {feedback && !reservation && (
                 <p className="rounded-xl border border-white/10 bg-white/[0.04] px-4 py-3 text-sm text-silver/75 font-light leading-relaxed mt-4">
                   {feedback}
                 </p>
+              )}
+
+              {reservation && (
+                <div className="rounded-xl border border-emerald-500/30 bg-emerald-500/[0.05] p-6 mt-4 text-center">
+                  <p className="text-emerald-400 font-medium mb-1">Đăng ký thành công!</p>
+                  <p className="text-sm text-silver/80 mb-5">
+                    {feedback}
+                  </p>
+                  <div className="bg-white p-3 rounded-xl inline-block mb-3">
+                    {/* VietQR Integration */}
+                    <img
+                      src={`https://img.vietqr.io/image/VCB-9776776856-compact2.png?amount=${reservation.price}&addInfo=AllinFnB%20Slot%20${reservation.slotNumber}%20${formData.phone}&accountName=PHAN%20THIEN%20PHU`}
+                      alt="VietQR Payment"
+                      className="w-48 h-48 object-contain"
+                    />
+                  </div>
+                  <p className="text-xs text-silver/60">
+                    Sử dụng App ngân hàng để quét mã VietQR.
+                  </p>
+                </div>
               )}
             </motion.form>
 
