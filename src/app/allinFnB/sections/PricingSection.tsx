@@ -33,7 +33,7 @@ const statusLabels: Record<SlotStatus, string> = {
   confirmed: 'Đã xác nhận',
 }
 
-const initialSlots: Slot[] = Array.from({ length: 7 }, (_, index) => ({
+const initialSlots: Slot[] = Array.from({ length: 10 }, (_, index) => ({
   slotNumber: index + 1,
   price: 4000000 + index * 2000000,
   status: 'available',
@@ -59,7 +59,7 @@ function getStatusClass(status: SlotStatus, isNext: boolean, isLastAvailable: bo
 
 export default function PricingSection() {
   const [pricing, setPricing] = useState<PricingResponse>({
-    totalSlots: 7,
+    totalSlots: 10,
     confirmedCount: 0,
     nextSlotNumber: 1,
     nextPrice: 4000000,
@@ -108,7 +108,7 @@ export default function PricingSection() {
       const data = await response.json()
 
       if (!response.ok) {
-        setFeedback(data.error === 'No available slots' ? 'Lớp đã đủ 7 vị trí.' : 'Vui lòng kiểm tra lại thông tin đăng ký.')
+        setFeedback(data.error === 'No available slots' ? 'Lớp đã đủ 10 vị trí.' : 'Vui lòng kiểm tra lại thông tin đăng ký.')
         return
       }
 
@@ -147,7 +147,7 @@ export default function PricingSection() {
           <p className="text-base md:text-lg text-silver/65 font-light max-w-3xl mx-auto leading-relaxed">
             Người đến sau trả nhiều hơn người đến trước. Không phải để tạo áp lực. Mà để phản ánh sự khác biệt giữa người quyết định sớm và người chần chừ.
           </p>
-          <p className="text-[11px] tracking-[0.25em] uppercase text-silver/40 mt-6">Chỉ có 7 vị trí. Không mở thêm.</p>
+          <p className="text-[11px] tracking-[0.25em] uppercase text-silver/40 mt-6">Chỉ có 10 vị trí. Không mở thêm.</p>
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-6 items-start">
@@ -206,8 +206,8 @@ export default function PricingSection() {
               <p className="text-[10px] tracking-[0.25em] uppercase text-silver/40 mb-4">Trạng thái hiện tại</p>
               <p className="text-xl md:text-2xl font-semibold text-white leading-snug mb-3">
                 {pricing.isFull
-                  ? '7/7 vị trí đã được giữ hoặc xác nhận.'
-                  : `Hiện tại: ${pricing.confirmedCount}/7 vị trí đã được xác nhận. Bạn sẽ là người thứ ${nextSlotNumber}.`}
+                  ? '10/10 vị trí đã được giữ hoặc xác nhận.'
+                  : `Hiện tại: ${pricing.confirmedCount + reservedCount}/10 vị trí đã được đăng ký. Bạn sẽ là người thứ ${nextSlotNumber}.`}
               </p>
               <p className="text-sm text-silver/55 font-light leading-relaxed">
                 {reservedCount > 0

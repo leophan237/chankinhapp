@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server'
 import { db } from '@/lib/db'
 
-const totalSlots = 7
+const totalSlots = 10
 const basePrice = 4000000
 const stepIncrease = 2000000
 const reservationWindowMs = 10 * 60 * 1000
