@@ -19,7 +19,7 @@ const posts = [
     {
         _id: 'earth-seed-1',
         _type: 'post',
-        title: 'Xây Dựng Cấu Trúc Pháp Lý Ngay Từ Ngày Đầu (Day 1 XCAP)',
+        title: 'Xây Dựng Cấu Trúc Pháp Lý Ngay Từ Ngày Đầu (Day 1 Foodify)',
         slug: { _type: 'slug', current: 'xay-dung-cau-truc-phap-ly' },
         element: 'earth',
         excerpt: 'Không có kỹ thuật nào hiệu quả nếu thế đứng không vững. Cấu trúc pháp lý Holdings, SPV và mô hình kinh doanh chuẩn chỉnh là nền tảng bắt buộc.',
@@ -149,7 +149,7 @@ const posts = [
         title: 'Chiến Lược Chiếm Lĩnh Thị Trường: Go-to-Market Aggressive',
         slug: { _type: 'slug', current: 'go-to-market-aggressive' },
         element: 'fire',
-        excerpt: 'Tấn công vào điểm yếu của đối thủ. Sử dụng đòn bẩy marketing để bùng nổ doanh số và định vị thương hiệu ngay từ đầu (Day 2 XCAP).',
+        excerpt: 'Tấn công vào điểm yếu của đối thủ. Sử dụng đòn bẩy marketing để bùng nổ doanh số và định vị thương hiệu ngay từ đầu (Day 2 Foodify).',
         description: 'Blitzscaling - Tăng trưởng thần tốc. Làm sao để chiếm lĩnh market share trong 3 tháng đầu.',
         publishedAt: '2025-01-20T00:00:00Z',
         readTime: '7',

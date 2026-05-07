@@ -10,13 +10,13 @@ export async function GET(request: Request) {
     // Earth - 3 posts
     {
       _id: 'earth-1',
-      title: 'Xây Dựng Cấu Trúc Pháp Lý Ngay Từ Ngày Đầu (Day 1 XCAP)',
+      title: 'Xây Dựng Cấu Trúc Pháp Lý Ngay Từ Ngày Đầu (Day 1 Foodify)',
       slug: { current: 'xay-dung-cau-truc-phap-ly' },
       excerpt: 'Không có kỹ thuật nào hiệu quả nếu thế đứng không vững. Cấu trúc pháp lý Holdings, SPV và mô hình kinh doanh chuẩn chỉnh là nền tảng bắt buộc.',
       category: 'earth',
       publishedAt: '2025-01-15T00:00:00Z',
       readTime: 8,
-      tags: ['Day 1 XCAP', 'Pháp lý', 'Holdco', 'SPV'],
+      tags: ['Day 1 Foodify', 'Pháp lý', 'Holdco', 'SPV'],
       content: [
         {
           _type: 'heading',
@@ -34,7 +34,7 @@ export async function GET(request: Request) {
         {
           _type: 'heading',
           level: 2,
-          text: 'Day 1 XCAP'
+          text: 'Day 1 Foodify'
         },
         {
           _type: 'callout',
@@ -259,11 +259,11 @@ export async function GET(request: Request) {
       _id: 'fire-1',
       title: 'Chiến Lược Chiếm Lĩnh Thị Trường: Go-to-Market Aggressive',
       slug: { current: 'go-to-market-aggressive' },
-      excerpt: 'Tấn công vào điểm yếu của đối thủ. Sử dụng đòn bẩy marketing để bùng nổ doanh số và định vị thương hiệu ngay từ đầu (Day 2 XCAP).',
+      excerpt: 'Tấn công vào điểm yếu của đối thủ. Sử dụng đòn bẩy marketing để bùng nổ doanh số và định vị thương hiệu ngay từ đầu (Day 2 Foodify).',
       category: 'fire',
       publishedAt: '2025-01-20T00:00:00Z',
       readTime: 7,
-      tags: ['Go-to-market', 'Marketing', 'Day 2 XCAP'],
+      tags: ['Go-to-market', 'Marketing', 'Day 2 Foodify'],
       content: [
         {
           _type: 'heading',
@@ -293,7 +293,7 @@ export async function GET(request: Request) {
           _type: 'callout',
           tone: 'important',
           emoji: '🎯',
-          title: 'Day 2 XCAP',
+          title: 'Day 2 Foodify',
           content: [
             {
               _type: 'block',

@@ -242,9 +242,9 @@ Work Log:
   * Falls back to mock data on API error, error response, or empty results
   * Filters mock posts by selectedElement
 - Updated element descriptions with detailed content per user specifications:
-  * Đất: Nền Tảng Vững Chắc + Pháp Lý & Mô Hình (Day 1 XCAP)
+  * Đất: Nền Tảng Vững Chắc + Pháp Lý & Mô Hình (Day 1 Foodify)
   * Thủy: Sự Linh Hoạt + Dòng Tiền & Thích Nghi (Pivot strategy)
-  * Hỏa: Sự Quyết Liệt + Marketing & Tăng Trưởng (Go-to-market, Day 2 XCAP)
+  * Hỏa: Sự Quyết Liệt + Marketing & Tăng Trưởng (Go-to-market, Day 2 Foodify)
   * Khí: Hiểu Đối Thủ + Cạnh Tranh & M&A (Venture Studio speed)
   * Không: Hư Không + Định Giá & Tài Sản Vô Hình (P/E ratio, Goodwill)
 - Updated API route to support "void" category filter
@@ -285,7 +285,7 @@ Work Log:
 - Updated /home/z/my-project/src/app/dao-trang/page.tsx:
   * Added new post (#5) by Zeon Phan with mention to Kinh Các article
   * Added mentionsKinhCac property to Post interface
-  * Post content includes: #KinhCác #Day1XCAP hashtags and direct link
+  * Post content includes: #KinhCác #Day1Foodify hashtags and direct link
   * Post displays link card to related Kinh Các article
   * Link card styled with amber gradient matching Chân Kinh theme
   * Comments section shows community engagement

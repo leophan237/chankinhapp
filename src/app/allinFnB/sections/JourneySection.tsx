@@ -39,7 +39,7 @@ const phases = [
     icon: Flag,
     name: 'XUỐNG NÚI',
     title: 'Ready to Play',
-    description: 'Hệ thống hóa lộ trình, Pitching & góp ý chéo, review đúc kết, cấp chứng nhận XCAP Certificate',
+    description: 'Hệ thống hóa lộ trình, Pitching & góp ý chéo, review đúc kết, cấp chứng nhận Foodify Certificate',
   },
 ]
 

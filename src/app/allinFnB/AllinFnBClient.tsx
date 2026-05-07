@@ -50,9 +50,9 @@ export default function AllinFnBClient() {
         <JourneySection />
         <ProgramDetailSection />
         <ValueStackSection />
-        <SocialProofSection />
-        <TrainerSection />
+        {/* <SocialProofSection /> */}
         <PricingSection />
+        <TrainerSection />
         <CTASection />
 
         {/* Footer */}
@@ -63,7 +63,7 @@ export default function AllinFnBClient() {
               Chương trình được tài trợ bởi <a href="https://foodify.vn" target="_blank" rel="noopener noreferrer">Foodify</a> × <a href="https://chankinhonline.com" target="_blank" rel="noopener noreferrer">Chân Kinh Online</a>
             </p>
             <p className="text-[10px] text-muted-foreground/30">
-              © 2025 XCAP. All rights reserved.
+              © 2025 Foodify. All rights reserved.
             </p>
           </div>
         </footer>

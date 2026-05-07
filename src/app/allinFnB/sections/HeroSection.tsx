@@ -29,7 +29,7 @@ export default function HeroSection() {
       >
         <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 bg-white/5 text-silver/80 text-xs tracking-widest uppercase">
           <Flame className="w-3 h-3" />
-          XCAP × Chân Kinh Online
+          Foodify × Chân Kinh Online
         </span>
       </motion.div>
 
@@ -43,7 +43,7 @@ export default function HeroSection() {
         <span className="text-white">ALL-IN F&B:</span>
         <br />
         <span className="text-silver/80 text-3xl sm:text-4xl md:text-5xl lg:text-6xl mt-4 block">
-          CON ĐƯỜNG TẤT TAY XÂY QUÁN CHẤT
+          TỰ ĐỘNG HÓA & x3 LỢI NHUẬN
         </span>
       </motion.h1>
 
@@ -54,7 +54,7 @@ export default function HeroSection() {
         transition={{ duration: 1, delay: 1 }}
         className="text-lg md:text-xl text-silver/60 font-light tracking-wide mb-4 max-w-3xl mx-auto leading-relaxed"
       >
-        Khóa huấn luyện 18 giờ thực chiến giúp Founder F&B thoát khỏi sự hỗn loạn của việc vận hành cảm tính, thiết lập hệ thống tự chạy và sẵn sàng cho vòng gọi vốn tiếp theo.
+        Công thức thực chiến đã được kiểm chứng bởi hệ sinh thái Foodify, giúp Founder F&B thoát khỏi cảnh "làm thuê cho chính mình" và thiết lập hệ thống tự chạy hoàn toàn.
       </motion.p>
 
       <motion.p
@@ -77,9 +77,9 @@ export default function HeroSection() {
       >
         <a
           href="#pricing"
-          className="group px-8 py-4 bg-white text-black font-semibold rounded-xl hover:bg-silver transition-all duration-300 flex items-center gap-2 text-sm tracking-wide"
+          className="group px-8 py-4 bg-white text-black font-semibold rounded-xl hover:bg-silver transition-all duration-300 flex items-center gap-2 text-sm tracking-wide text-center"
         >
-          GIỮ SUẤT EARLY BIRD CỦA TÔI
+          GIỮ SUẤT & NHẬN TOÀN BỘ QUÀ TẶNG
           <span className="group-hover:translate-x-1 transition-transform">→</span>
         </a>
         <a

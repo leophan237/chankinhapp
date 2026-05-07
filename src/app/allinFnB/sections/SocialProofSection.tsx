@@ -5,19 +5,25 @@ import { Quote } from 'lucide-react'
 
 const testimonials = [
   {
-    quote: "Sự khác biệt lớn nhất của Phú không phải là dạy bạn nấu ăn ngon, mà là dạy bạn cách thiết kế một cỗ máy sinh lời. Nhờ tư duy hệ thống của Phú, chuỗi của chúng tôi đã cắt giảm được 30% chi phí ẩn chỉ sau 2 tháng áp dụng.",
-    author: "Anh Nguyễn Văn A",
-    role: "Founder Chuỗi Cà Phê X",
+    before: "Quán lỗ 30tr/tháng, phải túc trực 14 tiếng/ngày ở quán để quản lý.",
+    after: "Cắt giảm 30% chi phí ẩn, lãi ròng 40tr/tháng, chỉ cần đến quán 2 tiếng/ngày.",
+    quote: "Sự khác biệt lớn nhất không phải là dạy nấu ăn ngon, mà là cách thiết kế một cỗ máy sinh lời. Hệ thống SOP đã hoàn toàn cứu sống quán tôi.",
+    author: "Anh Nguyễn Văn Minh",
+    role: "Founder Chuỗi Cà Phê",
   },
   {
-    quote: "Một người có tư duy tài chính sắc bén hiếm hoi trong ngành F&B. Lộ trình All-in F&B đã giúp tôi hiểu thế nào là 'tiền tệ hóa thương hiệu' và chuẩn bị hồ sơ gọi vốn chuyên nghiệp.",
-    author: "Chị Lê Thị B",
-    role: "CEO Nhà hàng Y",
+    before: "Bơi trong mớ bòng bong vận hành, không biết tính điểm hòa vốn chính xác.",
+    after: "Làm chủ bảng P&L, sẵn sàng hồ sơ gọi vốn chuyên nghiệp.",
+    quote: "Một tư duy tài chính sắc bén. Lộ trình All-in F&B đã giúp tôi hiểu thế nào là 'tiền tệ hóa thương hiệu' và làm chủ dòng tiền thực sự.",
+    author: "Chị Lê Thị Bích",
+    role: "CEO Nhà hàng Ẩm thực",
   },
   {
-    quote: "Bài toán chia sẻ lợi nhuận và khoán cho cửa hàng trưởng đã hoàn toàn thay đổi cách tôi vận hành. Giờ đây tôi có thể rời quán 1 tháng mà hệ thống vẫn tự chạy trơn tru.",
-    author: "Anh Trần Văn C",
-    role: "Founder Z Bakery",
+    before: "Chất lượng không đồng đều, phụ thuộc hoàn toàn vào bếp trưởng.",
+    after: "Số hóa công thức, thiết lập cơ chế khoán cho cửa hàng trưởng.",
+    quote: "Bài toán chia sẻ lợi nhuận đã thay đổi cách tôi vận hành. Giờ đây tôi có thể rời quán 1 tháng mà hệ thống vẫn tự chạy trơn tru.",
+    author: "Anh Trần Văn Cường",
+    role: "Founder Chuỗi Bakery",
   },
 ]
 
@@ -52,9 +58,24 @@ export default function SocialProofSection() {
               className="p-8 rounded-2xl border border-white/10 bg-white/5 hover:bg-white/10 transition-colors flex flex-col relative"
             >
               <Quote className="w-10 h-10 text-white/10 absolute top-6 right-6" />
-              <p className="text-silver/80 font-light leading-relaxed mb-8 flex-1 relative z-10 italic">
+              
+              <div className="mb-6 space-y-3 relative z-10">
+                <div>
+                  <span className="text-[10px] font-bold text-red-400 uppercase tracking-widest block mb-1">TRƯỚC KHI HỌC</span>
+                  <p className="text-sm text-silver/60 italic">"{item.before}"</p>
+                </div>
+                <div>
+                  <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-widest block mb-1">KẾT QUẢ ĐẠT ĐƯỢC</span>
+                  <p className="text-sm text-silver/90 font-medium">"{item.after}"</p>
+                </div>
+              </div>
+
+              <div className="h-px w-full bg-white/10 mb-6" />
+
+              <p className="text-silver/70 font-light leading-relaxed mb-8 flex-1 relative z-10 italic">
                 "{item.quote}"
               </p>
+              
               <div className="mt-auto flex items-center gap-4 border-t border-white/10 pt-6">
                 <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0">
                   <span className="text-white font-bold text-sm">{item.author.charAt(4)}</span>

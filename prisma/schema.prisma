@@ -9,7 +9,7 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 
@@ -29,4 +29,35 @@ model Post {
   authorId  String
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+}
+
+model AllinFnbSlot {
+  slotNumber           Int       @id
+  price                Int
+  status               String    @default("available")
+  reservedUntil        DateTime?
+  currentRegistrationId String?
+  createdAt            DateTime  @default(now())
+  updatedAt            DateTime  @updatedAt
+}
+
+model AllinFnbRegistration {
+  id            String    @id @default(cuid())
+  name          String
+  phone         String
+  email         String
+  model         String?
+  reason        String?
+  slotNumber    Int
+  price         Int
+  status        String    @default("reserved")
+  paymentStatus String    @default("pending")
+  expiresAt     DateTime?
+  confirmedAt   DateTime?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  @@index([email])
+  @@index([slotNumber])
+  @@index([status])
 }

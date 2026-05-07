@@ -29,10 +29,10 @@ export default function CTASection() {
 
             {/* Contact Info */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-10">
-              <a href="mailto:admin@xcap.vn" className="flex flex-col items-center gap-2 p-4 rounded-xl border border-white/10 hover:border-white/30 transition-colors group bg-black/20">
+              <a href="mailto:admin@foodify.vn" className="flex flex-col items-center gap-2 p-4 rounded-xl border border-white/10 hover:border-white/30 transition-colors group bg-black/20">
                 <Mail className="w-5 h-5 text-silver/80 group-hover:text-white transition-colors" />
                 <span className="text-xs text-silver/40 uppercase tracking-wider font-semibold">Email</span>
-                <span className="text-sm text-silver/80">admin@xcap.vn</span>
+                <span className="text-sm text-silver/80">admin@foodify.vn</span>
               </a>
               <a href="tel:+84776776856" className="flex flex-col items-center gap-2 p-4 rounded-xl border border-white/10 hover:border-white/30 transition-colors group bg-black/20">
                 <Phone className="w-5 h-5 text-silver/80 group-hover:text-white transition-colors" />

@@ -6,7 +6,7 @@ import { Clock, Wine, Coffee, Percent, Landmark, UserCheck, Handshake } from 'lu
 const values = [
   { icon: Clock, label: '18 Giờ Thực Chiến', description: 'Đóng gói toàn bộ hệ thống kinh doanh F&B (Trị giá 20.000.000đ)' },
   { icon: UserCheck, label: 'Tư Vấn Riêng 1:1', description: 'Phân tích trực tiếp case study doanh nghiệp của bạn (Trị giá 5.000.000đ/giờ)' },
-  { icon: Percent, label: 'Ưu Đãi Đặc Quyền XCAP', description: 'Giảm 10-12% phí dịch vụ Setup & Marketing (Tiết kiệm > 50.000.000đ)' },
+  { icon: Percent, label: 'Ưu Đãi Đặc Quyền Foodify', description: 'Giảm 10-12% phí dịch vụ Setup & Marketing (Tiết kiệm > 50.000.000đ)' },
   { icon: Landmark, label: 'Hỗ Trợ Cấp Vốn', description: 'Được ưu tiên thẩm định và tiếp cận nguồn vốn từ đối tác tín dụng' },
   { icon: Handshake, label: 'Mạng Lưới Quỹ Mạo Hiểm', description: 'Cơ hội tiếp cận hệ sinh thái quỹ đầu tư quy mô > 10 Triệu USD' },
   { icon: Coffee, label: 'Premium Networking', description: 'Kết nối tinh hoa ngành F&B trong không gian Tea Break chất lượng cao' },
@@ -25,7 +25,7 @@ export default function ValueStackSection() {
           className="text-center mb-16"
         >
           <span className="text-[11px] tracking-[0.3em] text-silver/60 uppercase mb-4 block font-semibold">
-            Hệ sinh thái XCAP
+            Hệ sinh thái Foodify
           </span>
           <h2 className="text-3xl md:text-4xl font-sans font-bold text-white mb-6">
             ĐẶC QUYỀN TRỊ GIÁ HÀNG TRĂM TRIỆU
@@ -57,6 +57,19 @@ export default function ValueStackSection() {
             </motion.div>
           ))}
         </div>
+
+        {/* Value Stack Summary */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.6, duration: 0.5 }}
+          className="mt-12 p-8 rounded-xl border-2 border-white/20 bg-white/[0.05] flex flex-col items-center justify-center text-center"
+        >
+          <p className="text-sm md:text-base text-silver/80 font-semibold mb-2 uppercase tracking-widest">Tổng giá trị bạn nhận được</p>
+          <p className="text-4xl md:text-5xl font-black text-white line-through decoration-red-500/80 decoration-4 mb-4">&gt; 85.000.000đ</p>
+          <p className="text-sm text-silver/60">Nhưng bạn không cần phải trả mức giá đó. Hãy xem ưu đãi hôm nay ở bên dưới.</p>
+        </motion.div>
       </div>
     </section>
   )

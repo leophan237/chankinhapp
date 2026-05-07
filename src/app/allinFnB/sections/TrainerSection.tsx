@@ -4,21 +4,21 @@ import { motion } from 'framer-motion'
 import { Building2, Coffee, Briefcase, TrendingUp, Users, PieChart, Award } from 'lucide-react'
 
 const roles = [
-  { icon: Building2, role: 'Founder & CEO', org: 'XCAP — Trạm Khởi Nghiệp' },
+  { icon: Building2, role: 'Founder & CEO', org: 'Foodify — Nền tảng Kinh doanh O2O Social Commerce' },
   { icon: Coffee, role: 'Founder & CEO', org: 'Tiệm Trà Có Sữa' },
   { icon: Briefcase, role: 'Founder & CEO', org: 'Blank Inc' },
-  { icon: TrendingUp, role: 'Cố vấn Chiến lược', org: 'Smash Burger Saigon' },
+  { icon: TrendingUp, role: 'Cố vấn Chiến lược', org: 'Another Bakeshop' },
   { icon: TrendingUp, role: 'Cố vấn Chiến lược', org: 'Veeayy Food' },
   { icon: PieChart, role: 'Investor Relations Manager', org: 'Aura Capital' },
   { icon: Users, role: 'Growth Director', org: 'CabinFood & CabinEat' },
-  { icon: Award, role: 'Cố vấn Toàn diện', org: 'Another Bakeshop' },
+  { icon: Award, role: 'Growth Advisor', org: 'The Cup Cafe' },
 ]
 
 export default function TrainerSection() {
   return (
     <section className="py-16 md:py-24 px-4 border-t border-white/5 bg-white/[0.01]">
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
-        
+
         {/* Left: Portrait Image */}
         <motion.div
           initial={{ opacity: 0, x: -30 }}
@@ -29,15 +29,15 @@ export default function TrainerSection() {
         >
           <div className="aspect-[3/4] md:aspect-square lg:aspect-[4/5] rounded-xl overflow-hidden border border-white/10 bg-black relative shadow-2xl">
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent z-10" />
-            <img 
-              src="/images/trainer_portrait.jpg" 
-              alt="Portrait of Founder" 
-              className="w-full h-full object-cover grayscale opacity-90 mix-blend-luminosity"
+            <img
+              src="/tutor.jpg"
+              alt="Portrait of Founder"
+              className="w-full h-full object-cover opacity-90"
             />
             {/* Overlay Info on Image */}
             <div className="absolute bottom-6 left-6 right-6 z-20">
               <h3 className="text-3xl font-bold text-white mb-2">Phan Thiên Phú</h3>
-              <p className="text-sm text-silver/60 tracking-widest uppercase font-semibold">Founder & CEO — XCAP</p>
+              <p className="text-sm text-silver/60 tracking-widest uppercase font-semibold">Founder & CEO — Foodify</p>
             </div>
           </div>
         </motion.div>
@@ -57,25 +57,29 @@ export default function TrainerSection() {
             10 năm thực chiến F&B
           </h2>
           <div className="h-px w-16 bg-white/20 mb-6" />
-          
+
           <p className="text-base text-silver/60 font-light leading-relaxed mb-8">
-            Với kinh nghiệm sâu rộng trong việc thiết lập khái niệm, vận hành hệ thống và cấu trúc tài chính cho đa dạng các mô hình F&B. 
+            Từ những thất bại thực tế, tôi đúc kết được nhiều bài học quý báu trong việc thiết lập khái niệm, vận hành hệ thống và cấu trúc tài chính cho đa dạng các mô hình F&B.
             Từng giữ các vai trò trọng yếu từ quản lý vận hành, phát triển kinh doanh đến quan hệ nhà đầu tư.
           </p>
 
           <div className="mb-12 space-y-4 p-5 rounded-xl border border-white/10 bg-white/[0.02]">
             <div className="flex items-start gap-3">
               <span className="text-emerald-400/80 mt-0.5 text-lg leading-none">✦</span>
-              <p className="text-sm text-white/90 font-medium leading-relaxed">Tư vấn mở rộng chuỗi cafe từ số 0 đến 7 cửa hàng.</p>
+              <p className="text-sm text-white/90 font-medium leading-relaxed">Setup, vận hành và quản lý chuỗi Cafe và Nhà hàng lên đến 11 cửa hàng.</p>
             </div>
             <div className="flex items-start gap-3">
               <span className="text-emerald-400/80 mt-0.5 text-lg leading-none">✦</span>
-              <p className="text-sm text-white/90 font-medium leading-relaxed">Quản lý danh mục đầu tư các dự án bán lẻ và F&B quy mô hơn 150 tỷ đồng.</p>
+              <p className="text-sm text-white/90 font-medium leading-relaxed">Huy động và quản lý hơn 1200 tỷ đồng trong vai trò giám đốc đầu tư, tư vấn đầu tư cho các dự án lớn nhỏ.</p>
+            </div>
+            <div className="flex items-start gap-3">
+              <span className="text-emerald-400/80 mt-0.5 text-lg leading-none">✦</span>
+              <p className="text-sm text-white/90 font-medium leading-relaxed">Đồng hành tư vấn hơn 50+ startup FnB, từ giai đoạn mới thành lập đến khi sống tốt.</p>
             </div>
           </div>
 
           {/* Roles List */}
-          <div className="space-y-4">
+          <div className="space-y-1">
             {roles.map((item, idx) => (
               <motion.div
                 key={idx}
@@ -83,7 +87,7 @@ export default function TrainerSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.05, duration: 0.4 }}
-                className="flex items-center gap-4 py-3 border-b border-white/5 group"
+                className="flex items-center gap-4 py-1.5 border-b border-white/5 group"
               >
                 <div className="w-8 h-8 rounded-lg flex items-center justify-center bg-white/5 group-hover:bg-white/10 transition-colors">
                   <item.icon className="w-4 h-4 text-white/60" />
